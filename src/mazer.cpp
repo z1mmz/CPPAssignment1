@@ -23,9 +23,18 @@ if (argc  <= 1 || argc > 6){
     std::cout << "LOADING BINARY" << std::endl;
     std::ifstream in("maze.g", std::ios::binary);
     int toresto = 0;
+    int h = 0;
+    int w = 0;
+    in.read((char*)&h,sizeof(h));
+    in.read((char*)&w,sizeof(w));
+
+    maze loadedMaze(h,w);
+
     while (in.read((char*)&toresto,sizeof(toresto))){
     std::cout << toresto << std::endl;
   }
+
+  std::cout << "maze h: "<< loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
   }
 }
   return 0;
