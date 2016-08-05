@@ -12,7 +12,6 @@ class maze
 public:
   int width;
   int height;
-  int *edges;
   edge_vec_t edges_v;
   maze(int w , int h);
 };
