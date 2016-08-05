@@ -7,8 +7,8 @@ public:
   maze(int w , int h);
 };
 struct edge{
-  int n;
-  int s;
-  int e;
-  int w;
+  int x1;
+  int x2;
+  int y1;
+  int y2;
 };

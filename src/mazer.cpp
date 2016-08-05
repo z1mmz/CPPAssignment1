@@ -22,7 +22,10 @@ if (argc  <= 1 || argc > 6){
   if(strcmp(argv[1],"--lb") == 0){
     std::cout << "LOADING BINARY" << std::endl;
     std::ifstream in("maze.g", std::ios::binary);
-    int toresto = 0;
+    int x1 = 0;
+    int x2 = 0;
+    int y1 = 0;
+    int y2 = 0;
     int h = 0;
     int w = 0;
     // int e = 0;
@@ -33,8 +36,13 @@ if (argc  <= 1 || argc > 6){
     maze loadedMaze(h,w);
     int edges[totalEdges];
     loadedMaze.edges = edges;
-    while (in.read((char*)&toresto,sizeof(toresto))){
-    std::cout << toresto << std::endl;
+    while (in.read((char*)&x1,sizeof(x1))&&in.read((char*)&y1,sizeof(y1))&&in.read((char*)&x2,sizeof(x2))&&in.read((char*)&y2,sizeof(y2)) ){
+      edge newEdge;
+      newEdge.x1 = x1;
+      newEdge.y1 = y1;
+      newEdge.x2 = x2;
+      newEdge.y2 = y2;
+    // std::cout << toresto << std::endl;
   }
 
   std::cout << "maze h: "<< loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
