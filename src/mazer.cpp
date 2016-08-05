@@ -25,16 +25,20 @@ if (argc  <= 1 || argc > 6){
     int toresto = 0;
     int h = 0;
     int w = 0;
+    // int e = 0;
     in.read((char*)&h,sizeof(h));
     in.read((char*)&w,sizeof(w));
-
+    int totalEdges = 0;
+    in.read((char*)&totalEdges,sizeof(totalEdges));
     maze loadedMaze(h,w);
-
+    int edges[totalEdges];
+    loadedMaze.edges = edges;
     while (in.read((char*)&toresto,sizeof(toresto))){
     std::cout << toresto << std::endl;
   }
 
   std::cout << "maze h: "<< loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
+  std::cout << "total edges: " << totalEdges << std::endl;
   }
 }
   return 0;
