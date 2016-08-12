@@ -7,17 +7,21 @@ if (argc  <= 1 || argc > 6){
   std::cerr << help << std::endl;
 }else{
 
+  // for (int i )
+
   if(strcmp(argv[1],"--help") == 0){
     std::cout << help << std::endl;
   }
   if(strcmp(argv[1],"--lb") == 0){
     std::cout << "LOADING BINARY" << std::endl;
+    // char *filename = argv[2];
+    // if (strcmp(filename[0],"-")){
+    //   maze loadedMaze = loadMaze(file);
+    // }
     maze loadedMaze = loadMaze("maze.g");
-;
     std::cout << "maze h: "<< loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
     std::cout << "total edges: " << loadedMaze.edges_v.size() << std::endl;
     std::cout << "Edge 1" << loadedMaze.edges_v[0].x1 << std::endl;
-
 
 
   }

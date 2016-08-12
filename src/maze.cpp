@@ -4,3 +4,9 @@ maze::maze(int w , int h){
     width = w;
     height = h;
   }
+
+void hello(void) {
+  
+
+
+}

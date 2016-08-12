@@ -2,4 +2,4 @@
 #include <iostream>
 #include <fstream>
 
-maze loadMaze(char *file);
+maze loadMaze(std::string file);

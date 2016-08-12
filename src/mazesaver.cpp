@@ -1,7 +1,7 @@
 #include "mazesaver.h"
 
-int saveToBin(maze m){
-  std::ofstream saveFile ("maze.bin", std::ios::out | std::ios::binary);
+int saveToBin(maze m,std::string out){
+  std::ofstream saveFile (out, std::ios::out | std::ios::binary);
   if(saveFile.is_open()) {
     saveFile << m.width << std::endl;
     saveFile << m.height << std::endl;
