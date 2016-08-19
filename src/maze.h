@@ -1,4 +1,5 @@
-
+#ifndef maze_h_
+#define maze_h_
 #include <vector>
 #include <string>
 struct edge {
@@ -41,3 +42,5 @@ public:
     virtual ~maze();
 
 };
+
+#endif
