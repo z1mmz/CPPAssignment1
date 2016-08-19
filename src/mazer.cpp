@@ -1,27 +1,26 @@
 #include "mazer.h"
 using namespace std;
 int main(int argc, char *argv[]) {
-std::string help = "./mazer --lb filename.maze --sv filename.svg # load binary file and save svg file \n ./mazer --g seed --sb filename.maze # generate with seed value, save binary file \n./mazer --g seed --sv filename.svg # generate with seed value, save svg file \n ./mazer --g seed --sb filename.maze --sv filename.svg # gen with seed, save binary, save svg";
+std::string help = "./mazer --lb filename.maze --sv filename.svg"
+"# load binary file and save svg file \n "
+"./mazer --g seed --sb filename.maze # generate with seed value,"
+" save binary file \n./mazer --g seed --sv filename.svg # generate"
+" with seed value, save svg file \n ./mazer --g seed --sb filename.maze"
+" --sv filename.svg # gen with seed, save binary, save svg";
 if (argc  <= 1 || argc > 6){
-  std::cerr << "ERROR: incorrect usage pleas1e use mazer --help for commands" << std::endl;
+  std::cerr << "ERROR: incorrect usage p1ease use mazer --help for commands" << std::endl;
   std::cerr << help << std::endl;
 }else{
-
-  // for (int i )
 
   if(strcmp(argv[1],"--help") == 0){
     std::cout << help << std::endl;
   }
   if(strcmp(argv[1],"--lb") == 0){
     std::cout << "LOADING BINARY" << std::endl;
-    // char *filename = argv[2];
-    // if (strcmp(filename[0],"-")){
-    //   maze loadedMaze = loadMaze(file);
-    // }
-    maze loadedMaze = loadMaze("maze.g");
+    maze loadedMaze = loadMaze(argv[2]);
     std::cout << "maze h: "<< loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
     std::cout << "total edges: " << loadedMaze.edges_v.size() << std::endl;
-    std::cout << "Edge 1" << loadedMaze.edges_v[0].x1 << std::endl;
+    std::cout << "Edge 1: " << loadedMaze.edges_v[0].x1 << std::endl;
 
 
   }

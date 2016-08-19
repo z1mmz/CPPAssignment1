@@ -24,6 +24,6 @@ public:
   int seed;
   edge_vec_t edges_v;
   cell_vec_t cell_v;
-  std::vector<edge_vec_t> cells;
+  std::vector<cell_vec_t> cells;
   maze(int w , int h);
 };
