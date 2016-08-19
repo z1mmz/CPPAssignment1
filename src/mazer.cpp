@@ -18,10 +18,10 @@ if (argc  <= 1 || argc > 6){
   if(strcmp(argv[1],"--lb") == 0){
     std::cout << "LOADING BINARY" << std::endl;
     maze loadedMaze = loadMaze(argv[2]);
+
     std::cout << "maze h: "<< loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
     std::cout << "total edges: " << loadedMaze.edges_v.size() << std::endl;
     std::cout << "Edge 1: " << loadedMaze.edges_v[0].x1 << std::endl;
-
 
   }
 }

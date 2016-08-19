@@ -19,11 +19,14 @@ typedef std::vector<edge> edge_vec_t;
 class maze
 {
 public:
-  int width;
-  int height;
-  int seed;
-  edge_vec_t edges_v;
-  cell_vec_t cell_v;
-  std::vector<cell_vec_t> cells;
-  maze(int w , int h);
+    int width;
+    int height;
+    long seed;
+    edge_vec_t edges_v;
+    cell_vec_t cell_v;
+    std::vector<cell_vec_t> cells;
+    maze(int w , int h);
+    int saveToSVG(void);
+    virtual ~maze();
+
 };

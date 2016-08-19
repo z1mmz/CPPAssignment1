@@ -32,7 +32,9 @@ maze loadMaze(std::string file){
     newEdge.y2 = y2;
     loadedMaze.edges_v.push_back(newEdge);
   // std::cout << toresto << std::endl;
+
   }
+  in.close();
   return loadedMaze;
 
   }
