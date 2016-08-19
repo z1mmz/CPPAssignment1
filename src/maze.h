@@ -7,7 +7,12 @@ struct edge {
     int y1;
     int y2;
 };
-
+enum direction{
+    north,
+    south,
+    east,
+    west
+};
 struct cell {
     int y;
     int x;

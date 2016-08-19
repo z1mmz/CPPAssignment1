@@ -28,7 +28,8 @@ int main(int argc, char *argv[]) {
 
         }
         if(strcmp(argv[1],"-g") ==0){
-            maze(1023,100,100);
+            maze a(1023,100,100);
+            a.saveToSVG("test.svg");
         }
     }
     return 0;
