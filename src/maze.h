@@ -39,7 +39,7 @@ public:
 
     int saveToSVG(std::string a);
 
-    virtual ~maze();
+//    virtual ~maze();
 
 };
 

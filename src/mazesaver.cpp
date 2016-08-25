@@ -6,7 +6,7 @@ int saveToBin(maze m,std::string out){
     saveFile << m.width << std::endl;
     saveFile << m.height << std::endl;
     saveFile << m.edges_v.size() << std::endl;
-    for (u_int i = 0 ; i < m.edges_v.size() ; i++){
+    for (u_int i = 0 ; i < m.edges_v.size() - 1 ; i++){
       saveFile << m.edges_v[i].x1 << std::endl;
       saveFile << m.edges_v[i].y1 << std::endl;
       saveFile << m.edges_v[i].x2 << std::endl;

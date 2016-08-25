@@ -13,6 +13,7 @@ maze::maze(int w , int h){
           cell a;
           a.x = x;
           a.y = i;
+          std::cout << "x : "<< x << " y : "<< i << std::endl;
           coll.push_back(a);
       }
       cells.push_back(coll);
@@ -22,125 +23,6 @@ maze::maze(int w , int h){
 
 
   }
-
-maze::maze(long seed, int w, int h) {
-    // constructed to generate maze
-    width = w;
-    height = h;
-
-    for (int x = 0 ; x < h ; x++){
-        cell_vec_t coll;
-        for (int i = 0 ; i < w ; i++){
-            cell a;
-            a.x = x;
-            a.y = i;
-            coll.push_back(a);
-        }
-        cells.push_back(coll);
-    }
-
-    std::cout << "getting random" << std::endl;
-    std::random_device rand_dev;
-    std::cout << "getting gen" << std::endl;
-    std::mt19937 generator(rand_dev());
-    std::cout << "do dist" << std::endl;
-    std::uniform_int_distribution<int> distr(0, 4);
-//    std::cout << "cell 0 0 : " <<this->cells[0][0].x;
-    std::cout << "getting cell" << std::endl;
-    cell s = this->cells[0][0];
-    std::cout << "starting loop" << std::endl;
-    long unvisted = w*h;
-
-
-
-    while(unvisted > 1){
-        std::cout << unvisted << std::endl;
-        direction d = (direction) distr(generator);
-
-        switch (d){
-            case north:
-                if (s.y > 0 ){
-                    if (!this->cells[s.x][s.y - 1].visited){
-                        edge e;
-                        e.x1 = s.x;
-                        e.y1 = s.y;
-                        e.x2 = s.x;
-                        e.y2 = s.y - 1;
-                        this->edges_v.push_back(e);
-                        this->cells[s.x][s.y - 1].visited = true;
-                        s = this->cells[s.x][s.y - 1];
-                        unvisted--;
-                    }else
-                    {
-                        s = this->cells[s.x][s.y - 1];
-                    }
-
-                }
-                break;
-            case south:
-                if (s.y < this->height -1 ){
-                    if (!this->cells[s.x][s.y + 1].visited){
-                        edge e;
-                        e.x1 = s.x;
-                        e.y1 = s.y;
-                        e.x2 = s.x;
-                        e.y2 = s.y + 1;
-                        this->edges_v.push_back(e);
-                        this->cells[s.x][s.y + 1].visited = true;
-                        s = this->cells[s.x][s.y + 1];
-                        unvisted--;
-                    }else
-                    {
-                        s = this->cells[s.x][s.y + 1];
-                    }
-
-                }
-                break;
-            case west:
-
-                if (s.x > 0 ){
-                    if (!this->cells[s.x - 1][s.y].visited){
-                        edge e;
-                        e.x1 = s.x;
-                        e.y1 = s.y;
-                        e.x2 = s.x - 1;
-                        e.y2 = s.y;
-                        this->edges_v.push_back(e);
-                        this->cells[s.x -1][s.y].visited = true;
-                        s = this->cells[s.x -1][s.y];
-                        unvisted--;
-                    }else
-                    {
-                        s = this->cells[s.x - 1][s.y];
-                    }
-
-                }
-                break;
-            case east:
-                if (s.x < this->width - 1 ){
-                    if (!this->cells[s.x + 1][s.y].visited){
-                        edge e;
-                        e.x1 = s.x;
-                        e.y1 = s.y;
-                        e.x2 = s.x + 1;
-                        e.y2 = s.y;
-                        this->edges_v.push_back(e);
-                        this->cells[s.x+1][s.y].visited = true;
-                        s = this->cells[s.x+1][s.y];
-                        unvisted--;
-                    }else
-                    {
-                        s = this->cells[s.x+1][s.y];
-                    }
-
-                }
-                break;
-        }
-
-    }
-
-}
-
 
 int maze::saveToSVG(std::string file) {
     std::fstream fOut(file, std::fstream::out | std::fstream::trunc);
@@ -152,6 +34,8 @@ int maze::saveToSVG(std::string file) {
         fOut << "<rect width='"<<(this->width+ 1)  * 10<<"' ";
         fOut << "height='"<<(this->height + 1) * 10<<"' ";
         fOut << "style='fill: black'/>\n";
+//        edge p = this->edges_v[0];
+//        std::cout << p.x1
         for (edge e : this->edges_v){
             fOut << "<line stroke='white' stroke-width='4' ";
             fOut << "x1='" <<( e.x1 + 1) * 10 <<"' ";
@@ -182,6 +66,4 @@ int maze::saveToSVG(std::string file) {
     return 0;
 }
 
-maze::~maze() {
 
-}
