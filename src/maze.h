@@ -37,8 +37,8 @@ public:
     maze(int w, int h);
     maze(long seed,int w,int h);
 
-    int saveToSVG(std::string a);
-
+    int saveToSVG(std::string file);
+    int saveToBin(std::string file);
 //    virtual ~maze();
 
 };

@@ -17,6 +17,7 @@ maze loadMaze(std::string file) {
 // Read the width and height
     in.read((char *) &h, sizeof(h));
     in.read((char *) &w, sizeof(w));
+    std::cout << h << std::endl;
     int totalEdges = 0;
     in.read((char *) &totalEdges, sizeof(totalEdges));
     maze loadedMaze(h, w);
@@ -31,6 +32,7 @@ maze loadMaze(std::string file) {
         newEdge.y1 = y1;
         newEdge.x2 = x2;
         newEdge.y2 = y2;
+        std::cout << "x1: "<< x1 << " y1: " << y1 << " x2: " << x2 << " y2: "<< y2 << std::endl;
         loadedMaze.edges_v.push_back(newEdge);
         // std::cout << toresto << std::endl;
 

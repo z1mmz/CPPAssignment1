@@ -13,7 +13,6 @@ maze::maze(int w , int h){
           cell a;
           a.x = x;
           a.y = i;
-          std::cout << "x : "<< x << " y : "<< i << std::endl;
           coll.push_back(a);
       }
       cells.push_back(coll);
@@ -63,6 +62,29 @@ int maze::saveToSVG(std::string file) {
 //    /* box */
 //    output << "<rect width='" << box_width << "' height='" << box_height;
 //    output << "' style='fill: black' />" << "\n";
+    return 0;
+}
+
+int maze::saveToBin(std::string file) {
+    std::fstream fOut(file,std::fstream::out | std::fstream::binary | std::fstream::trunc);
+
+    if(fOut.is_open()){
+
+        int h = this->height;
+        int w = this->width;
+        int numEdge = this->edges_v.size();
+        fOut.write((char *)&w, sizeof(w));
+        fOut.write((char *)&h, sizeof(h));
+        fOut.write((char *)&numEdge , sizeof(numEdge));
+        for (edge e : this->edges_v){
+            fOut.write((char *)&e.x1, sizeof(e.x1));
+            fOut.write((char *)&e.y1, sizeof(e.y1));
+            fOut.write((char *)&e.x2, sizeof(e.x2));
+            fOut.write((char *)&e.y2, sizeof(e.y2));
+            std::cout << "x1: "<< e.x1 << " y1: " << e.y1 << " x2: " << e.x2 << " y2: "<< e.y2 << std::endl;
+        }
+        fOut.close();
+    }
     return 0;
 }
 

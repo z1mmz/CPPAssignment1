@@ -34,7 +34,11 @@ int main(int argc, char *argv[]) {
              argsexeced++;
              string file = argv[++argsexeced];
              loadedMaze.saveToSVG(file);
-             }
+             }else if (strcmp(argv[argsexeced + 1],"--sb") == 0){
+             argsexeced++;
+             string file = argv[++argsexeced];
+             loadedMaze.saveToBin(file);
+         }
         }
 
         if(strcmp(argv[1],"--g") == 0){
@@ -61,6 +65,10 @@ int main(int argc, char *argv[]) {
                 argsexeced++;
                 string file = argv[++argsexeced];
                 loadedMaze.saveToSVG(file);
+            }else if(strcmp(argv[argsexeced + 1],"--sb") == 0){
+                argsexeced++;
+                string file = argv[++argsexeced];
+                loadedMaze.saveToBin(file);
             }
         }
 
