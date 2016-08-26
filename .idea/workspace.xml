@@ -11,21 +11,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mazeloader.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mazeloader.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a" afterPath="$PROJECT_DIR$/a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mazer" afterPath="$PROJECT_DIR$/mazer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.h.gch" afterPath="$PROJECT_DIR$/src/mazer.h.gch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.cpp" afterPath="$PROJECT_DIR$/src/maze.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.h" afterPath="$PROJECT_DIR$/src/maze.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazegen.cpp" afterPath="$PROJECT_DIR$/src/mazegen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.h" afterPath="$PROJECT_DIR$/src/mazer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazesaver.cpp" afterPath="$PROJECT_DIR$/src/mazesaver.cpp" />
-    </list>
+    <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="" />
     <ignored path="assignment1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="maze.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maze.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+            <state relative-caret-position="45">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -123,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mazer.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mazer.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
+            <state relative-caret-position="527">
               <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
               <folding />
             </state>
@@ -422,12 +408,12 @@
       <workItem from="1472084744631" duration="2307000" />
       <workItem from="1472097715390" duration="1613000" />
       <workItem from="1472104226308" duration="12384000" />
-      <workItem from="1472180579425" duration="3712000" />
+      <workItem from="1472180579425" duration="4316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36081000" />
+    <option name="totallyTimeSpent" value="36685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -889,14 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mazesaver.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -928,11 +906,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maze.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
