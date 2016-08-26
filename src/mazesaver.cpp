@@ -19,6 +19,7 @@ int saveToBin(maze m,std::string out){
   }
   return 0 ;
 
+
 }
 int saveToSVG(maze m){
 // save maze to svg

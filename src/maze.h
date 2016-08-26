@@ -2,6 +2,7 @@
 #define maze_h_
 #include <vector>
 #include <string>
+
 struct edge {
     int x1;
     int x2;
@@ -17,13 +18,14 @@ enum direction{
 struct cell {
     int y;
     int x;
+    std::vector< cell*> connected;
     bool visited;
 
 };
 
 typedef std::vector<cell> cell_vec_t;
-typedef std::vector<edge> edge_vec_t;
 
+typedef std::vector<edge> edge_vec_t;
 
 class maze {
 public:
@@ -35,12 +37,16 @@ public:
     std::vector<cell_vec_t> cells;
 
     maze(int w, int h);
+    maze(void);
     maze(long seed,int w,int h);
 
     int saveToSVG(std::string file);
     int saveToBin(std::string file);
-//    virtual ~maze();
+    virtual ~maze();
 
+    int loadFromBin(std::string file);
+
+    int initMaze(int w, int h);
 };
 
 #endif

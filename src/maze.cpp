@@ -7,9 +7,9 @@ maze::maze(int w , int h){
     width = w;
     height = h;
 
-    for (int x = 0 ; x < h ; x++){
+    for (int x = 0 ; x < w ; x++){
       cell_vec_t coll;
-      for (int i = 0 ; i < w ; i++){
+      for (int i = 0 ; i < h ; i++){
           cell a;
           a.x = x;
           a.y = i;
@@ -17,11 +17,26 @@ maze::maze(int w , int h){
       }
       cells.push_back(coll);
     }
-//    cells[x][y]
-//    std::cout << cells[0][1].y; should = 1
-
 
   }
+
+int maze::initMaze(int w, int h){
+    width = w;
+    height = h;
+
+    for (int x = 0 ; x < w ; x++){
+        cell_vec_t coll;
+        for (int i = 0 ; i < h ; i++) {
+            cell a;
+            a.x = x;
+            a.y = i;
+            coll.push_back(a);
+        }
+        cells.push_back(coll);
+    }
+    return 0;
+}
+maze::maze(void){};
 
 int maze::saveToSVG(std::string file) {
     std::fstream fOut(file, std::fstream::out | std::fstream::trunc);
@@ -33,8 +48,7 @@ int maze::saveToSVG(std::string file) {
         fOut << "<rect width='"<<(this->width+ 1)  * 10<<"' ";
         fOut << "height='"<<(this->height + 1) * 10<<"' ";
         fOut << "style='fill: black'/>\n";
-//        edge p = this->edges_v[0];
-//        std::cout << p.x1
+
         for (edge e : this->edges_v){
             fOut << "<line stroke='white' stroke-width='4' ";
             fOut << "x1='" <<( e.x1 + 1) * 10 <<"' ";
@@ -50,18 +64,8 @@ int maze::saveToSVG(std::string file) {
 
     }
 
+    fOut.close();
 
-//    /* header */
-//    unsigned offset = WALL_WIDTH * 2; /* Both sides */
-//    unsigned box_width = CELL_SIZE_PIXELS * maze->get_width() + offset;
-//    unsigned box_height = CELL_SIZE_PIXELS * maze->get_height() + offset;
-//    output << "<svg width='" << box_width << "' ";
-//    output << "height='" << box_height << "' ";
-//    output << "xmlns='http://www.w3.org/2000/svg'>" << "\n";
-//
-//    /* box */
-//    output << "<rect width='" << box_width << "' height='" << box_height;
-//    output << "' style='fill: black' />" << "\n";
     return 0;
 }
 
@@ -81,11 +85,56 @@ int maze::saveToBin(std::string file) {
             fOut.write((char *)&e.y1, sizeof(e.y1));
             fOut.write((char *)&e.x2, sizeof(e.x2));
             fOut.write((char *)&e.y2, sizeof(e.y2));
-            std::cout << "x1: "<< e.x1 << " y1: " << e.y1 << " x2: " << e.x2 << " y2: "<< e.y2 << std::endl;
         }
         fOut.close();
     }
     return 0;
 }
+int maze::loadFromBin(std::string file){
 
+    std::ifstream in(file, std::ios::binary);
 
+    int x1 = 0;
+    int x2 = 0;
+    int y1 = 0;
+    int y2 = 0;
+    int h = 0;
+    int w = 0;
+
+// Read the width and height
+    in.read((char *) &h, sizeof(h));
+    in.read((char *) &w, sizeof(w));
+    std::cout << h << std::endl;
+    int totalEdges = 0;
+    in.read((char *) &totalEdges, sizeof(totalEdges));
+    initMaze(h, w);
+
+    // Read in the edges
+    while (in.read((char *) &x1, sizeof(x1))
+           && in.read((char *) &y1, sizeof(y1))
+           && in.read((char *) &x2, sizeof(x2))
+           && in.read((char *) &y2, sizeof(y2))) {
+        edge newEdge;
+        newEdge.x1 = x1;
+        newEdge.y1 = y1;
+        newEdge.x2 = x2;
+        newEdge.y2 = y2;
+        // create connected vectors
+        cells[x1][y1].connected.push_back(&cells[x2][y2]);
+        cells[x2][y2].connected.push_back(&cells[x1][y1]);
+        edges_v.push_back(newEdge);
+
+    }
+    if (edges_v.size() != totalEdges){
+        std::cerr << "Error: Did not load all edges" << std::endl;
+        return 1;
+
+    }
+    in.close();
+
+    return 0;
+}
+
+maze::~maze() {
+
+}

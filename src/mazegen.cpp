@@ -12,21 +12,18 @@ maze genABMaze(long seed, int w, int h) {
     std::mt19937 generator(seed);
     std::cout << "do dist" << std::endl;
     std::uniform_int_distribution<int> distr(0, 4);
-//    std::cout << "cell 0 0 : " <<this->cells[0][0].x;
+
     std::uniform_int_distribution<int> rH(0, h-1);
     std::uniform_int_distribution<int> rW(0, w-1);
     maze ABMaze(w,h);
-    maze * mazeponter;
     std::cout << "getting cell" << std::endl;
     cell s = ABMaze.cells[rW(generator)][rH(generator)];
     std::cout << "starting loop" << std::endl;
     long unvisted = w*h;
 
 
-
-
     while(unvisted > 1){
-//        std::cout << unvisted << std::endl;
+
         direction d = (direction) distr(generator);
 
         switch (d){
@@ -124,9 +121,6 @@ maze genABMaze(long seed, int w, int h) {
     }
 
     std::cout << "Generated maze " << std::endl;
-
-    mazeponter = &ABMaze;
-    std::cout << "Edge size: " << (*(mazeponter)).edges_v[0].x1<< std::endl;
     return ABMaze;
 
 }

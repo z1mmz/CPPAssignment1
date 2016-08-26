@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-
+    maze m = maze();
     std::string help = "./mazer --lb filename.maze --sv filename.svg"
             "# load binary file and save svg file \n"
             "./mazer --g seed --sb filename.maze # generate with seed value,"
@@ -25,19 +25,22 @@ int main(int argc, char *argv[]) {
      if (strcmp(argv[1], "--lb") == 0) {
             argsexeced++;
             std::cout << "LOADING BINARY" << std::endl;
-            maze loadedMaze = loadMaze(argv[2]);
+//            maze loadedMaze = loadMaze(argv[2]);
+            if(m.loadFromBin(argv[2]) == 1){
+                return 1;
+            }
             argsexeced++;
-            std::cout << "maze h: " << loadedMaze.height << " maze w: " << loadedMaze.width << std::endl;
-            std::cout << "total edges: " << loadedMaze.edges_v.size() << std::endl;
-            std::cout << "Edge 1: " << loadedMaze.edges_v.at(10).x1 << std::endl;
+            std::cout << "maze h: " << m.height << " maze w: " << m.width << std::endl;
+            std::cout << "total edges: " << m.edges_v.size() << std::endl;
+            std::cout << "Edge 1: " << m.edges_v.at(10).x1 << std::endl;
          if(strcmp(argv[argsexeced + 1],"--sv") == 0){
              argsexeced++;
              string file = argv[++argsexeced];
-             loadedMaze.saveToSVG(file);
+             m.saveToSVG(file);
              }else if (strcmp(argv[argsexeced + 1],"--sb") == 0){
              argsexeced++;
              string file = argv[++argsexeced];
-             loadedMaze.saveToBin(file);
+             m.saveToBin(file);
          }
         }
 
@@ -70,6 +73,7 @@ int main(int argc, char *argv[]) {
                 string file = argv[++argsexeced];
                 loadedMaze.saveToBin(file);
             }
+
         }
 
 
