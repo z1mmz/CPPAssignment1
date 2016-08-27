@@ -1,27 +1,25 @@
 
 #include <iostream>
 #include <random>
+#include <chrono>
 #include "maze.h"
 
 maze genABMaze(long seed, int w, int h) {
 
-
-    std::cout << "getting random" << std::endl;
-    std::random_device rand_dev;
-    std::cout << "getting gen" << std::endl;
+    if(seed == 0){
+        seed = std::chrono::system_clock::now().time_since_epoch().count();
+    }
+//    std::cout << "Seed: " << seed << std::endl;
     std::mt19937 generator(seed);
-    std::cout << "do dist" << std::endl;
     std::uniform_int_distribution<int> distr(0, 4);
-
     std::uniform_int_distribution<int> rH(0, h-1);
     std::uniform_int_distribution<int> rW(0, w-1);
     maze ABMaze(w,h);
-    std::cout << "getting cell" << std::endl;
     cell s = ABMaze.cells[rW(generator)][rH(generator)];
-    std::cout << "starting loop" << std::endl;
+    std::cout << "Starting maze generation loop" << std::endl;
     long unvisted = w*h;
-
-
+    auto start_t = std::chrono::high_resolution_clock::now();
+    ABMaze.seed = seed;
     while(unvisted > 1){
 
         direction d = (direction) distr(generator);
@@ -30,15 +28,12 @@ maze genABMaze(long seed, int w, int h) {
             case north:
                 if (s.y > 0 ){
                     if (!ABMaze.cells[s.x][s.y - 1].visited){
-//                        std::cout << "Going North x = " << s.x << "y = " << s.y -1 << std::endl;
                         edge e;
                         e.x1 = s.x;
                         e.y1 = s.y;
                         e.x2 = s.x;
                         e.y2 = s.y - 1;
                         ABMaze.edges_v.push_back(e);
-//                        std::cout << e.y1 << "= y1 " << e.x1 << " = x1" << std::endl;
-//                        std::cout << e.y2 << "= y2 " << e.x2 << " = x2" << std::endl;
                         ABMaze.cells[s.x][s.y - 1].visited = true;
                         s = ABMaze.cells[s.x][s.y - 1];
                         unvisted--;
@@ -52,7 +47,6 @@ maze genABMaze(long seed, int w, int h) {
             case south:
                 if (s.y < ABMaze.height -1 ){
                     if (!ABMaze.cells[s.x][s.y + 1].visited){
-//                        std::cout << "Going South" << std::endl;
                         edge e;
                         e.x1 = s.x;
                         e.y1 = s.y;
@@ -61,8 +55,6 @@ maze genABMaze(long seed, int w, int h) {
                         ABMaze.edges_v.push_back(e);
                         ABMaze.cells[s.x][s.y + 1].visited = true;
                         s = ABMaze.cells[s.x][s.y + 1];
-//                        std::cout << e.y1 << "= y1 " << e.x1 << " = x1" << std::endl;
-//                        std::cout << e.y2 << "= y2 " << e.x2 << " = x2" << std::endl;
                         unvisted--;
                     }else
                     {
@@ -75,7 +67,6 @@ maze genABMaze(long seed, int w, int h) {
 
                 if (s.x > 0 ){
                     if (!ABMaze.cells[s.x - 1][s.y].visited){
-//                        std::cout << "Going West" << std::endl;
                         edge e;
                         e.x1 = s.x;
                         e.y1 = s.y;
@@ -84,8 +75,6 @@ maze genABMaze(long seed, int w, int h) {
                         ABMaze.edges_v.push_back(e);
                         ABMaze.cells[s.x -1][s.y].visited = true;
                         s = ABMaze.cells[s.x -1][s.y];
-//                        std::cout << e.y1 << "= y1 " << e.x1 << " = x1" << std::endl;
-//                        std::cout << e.y2 << "= y2 " << e.x2 << " = x2" << std::endl;
                         unvisted--;
                     }else
                     {
@@ -97,7 +86,6 @@ maze genABMaze(long seed, int w, int h) {
             case east:
                 if (s.x < ABMaze.width - 1 ){
                     if (!ABMaze.cells[s.x + 1][s.y].visited){
-//                        std::cout << "Going East" << std::endl;
                         edge e;
                         e.x1 = s.x;
                         e.y1 = s.y;
@@ -106,8 +94,6 @@ maze genABMaze(long seed, int w, int h) {
                         ABMaze.edges_v.push_back(e);
                         ABMaze.cells[s.x+1][s.y].visited = true;
                         s = ABMaze.cells[s.x+1][s.y];
-//                        std::cout << e.y1 << "= y1 " << e.x1 << " = x1" << std::endl;
-//                        std::cout << e.y2 << "= y2 " << e.x2 << " = x2" << std::endl;
                         unvisted--;
                     }else
                     {
@@ -119,8 +105,13 @@ maze genABMaze(long seed, int w, int h) {
         }
 
     }
+    auto end_t = std::chrono::high_resolution_clock::now();
 
-    std::cout << "Generated maze " << std::endl;
+
+    std::cout << "Generated maze in: "
+              << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
+              << " milliseconds"
+              << std::endl;
     return ABMaze;
 
 }

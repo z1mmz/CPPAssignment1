@@ -36,7 +36,7 @@ int maze::initMaze(int w, int h){
     }
     return 0;
 }
-maze::maze(void){};
+maze::maze(void){}
 
 int maze::saveToSVG(std::string file) {
     std::fstream fOut(file, std::fstream::out | std::fstream::trunc);
@@ -44,7 +44,7 @@ int maze::saveToSVG(std::string file) {
 
     if(fOut.is_open()){
 
-        fOut << "<svg xmlns='http://www.w3.org/2000/svg' width='"<< (this->width + 1) * 1  <<"' ";
+        fOut << "<svg xmlns='http://www.w3.org/2000/svg' width='"<< (this->width + 1) * 10  <<"' ";
         fOut <<"height='"<<(this->height + 1) * 10 <<"'> \n";
         fOut << "<rect width='"<<(this->width+ 1)  * 10<<"' ";
         fOut << "height='"<<(this->height + 1) * 10<<"' ";
@@ -126,7 +126,7 @@ int maze::loadFromBin(std::string file){
         edges_v.push_back(newEdge);
 
     }
-    if (edges_v.size() != totalEdges){
+    if (edges_v.size() != (unsigned) totalEdges){
         std::cerr << "Error: Did not load all edges" << std::endl;
         return 1;
 

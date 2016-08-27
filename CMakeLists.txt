@@ -9,14 +9,10 @@ set(SOURCE_FILES
     src/maze.h.gch
     src/mazegen.cpp
     src/mazegen.h
-        src/mazeloader.h.gch
-    src/mazer.cpp
+        src/mazer.cpp
     src/mazer.h
     src/mazer.h.gch
-    src/mazesaver.cpp
-    src/mazesaver.h
-    src/mazesaver.h.gch
-    a
+        a
     makefile
     maze.g
     mazer

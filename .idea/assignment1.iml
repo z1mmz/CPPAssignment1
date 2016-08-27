@@ -6,19 +6,17 @@
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/readme" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/a" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazesaver.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazeloader.h.gch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazer.h.gch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/maze.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/maze.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/maze.h.gch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazegen.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazeloader.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazeloader.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/mazegen.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazesaver.h.gch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazegen.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/maze.h.gch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazer.h.gch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazesaver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/maze.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazegen.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/maze.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazesaver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mazer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/maze.g" isTestSource="false" />
