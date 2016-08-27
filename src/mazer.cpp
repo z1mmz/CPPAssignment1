@@ -148,7 +148,7 @@ int main(int argc, char *argv[]) {
 		}
 
 //        loadedMaze->saveToSVG("test.svg");
-				\
+
 
 	}
 	return 0;

@@ -21,6 +21,7 @@ maze::maze(int w, int h) {
 			cell a;
 			a.x = x;
 			a.y = i;
+			a.visited = false;
 			coll.push_back(a);
 		}
 		cells.push_back(coll);
@@ -40,6 +41,7 @@ int maze::initMaze(int w, int h) {
 			cell a;
 			a.x = x;
 			a.y = i;
+			a.visited = false;
 			coll.push_back(a);
 		}
 		cells.push_back(coll);
@@ -134,6 +136,8 @@ int maze::loadFromBin(std::string file) {
 		// create connected vectors
 		cells[x1][y1].connected.push_back(&cells[x2][y2]);
 		cells[x2][y2].connected.push_back(&cells[x1][y1]);
+		cells[x1][y1].visited = true;
+		cells[x2][y2].visited = true;
 		edges_v.push_back(newEdge);
 
 	}
