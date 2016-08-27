@@ -12,13 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/aslkd.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/b.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/maze.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mazer.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testy.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ttt.svg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makefile" afterPath="$PROJECT_DIR$/makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.cpp" afterPath="$PROJECT_DIR$/src/maze.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.h" afterPath="$PROJECT_DIR$/src/maze.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazegen.cpp" afterPath="$PROJECT_DIR$/src/mazegen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazegen.h" afterPath="$PROJECT_DIR$/src/mazegen.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.h" afterPath="$PROJECT_DIR$/src/mazer.h" />
     </list>
     <ignored path="assignment1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makefile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="makefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -141,8 +147,8 @@
         <option value="$PROJECT_DIR$/src/mazegen.cpp" />
         <option value="$PROJECT_DIR$/src/mazer.h" />
         <option value="$PROJECT_DIR$/src/maze.cpp" />
-        <option value="$PROJECT_DIR$/makefile" />
         <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/makefile" />
       </list>
     </option>
   </component>
@@ -222,6 +228,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment1" TARGET_NAME="assignment1" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -417,12 +425,12 @@
       <workItem from="1472097715390" duration="1613000" />
       <workItem from="1472104226308" duration="12384000" />
       <workItem from="1472180579425" duration="8209000" />
-      <workItem from="1472273958214" duration="5567000" />
+      <workItem from="1472273958214" duration="6119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46145000" />
+    <option name="totallyTimeSpent" value="46697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="27" width="960" height="1053" extended-state="4" />
@@ -841,18 +849,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
+    <entry file="file://$PROJECT_DIR$/readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
+    <entry file="file://$PROJECT_DIR$/makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding />
         </state>
       </provider>
