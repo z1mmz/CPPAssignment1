@@ -23,6 +23,8 @@ int main(int argc, char *argv[]) {
 		std::cerr << "ERROR: incorrect usage p1ease use mazer --help for commands" << std::endl;
 		std::cerr << help << std::endl;
 	} else {
+
+		// this will count how many arguments we have used
 		int argsexeced = 0;
 
 		if (strcmp(argv[1], "--help") == 0) {
@@ -33,7 +35,6 @@ int main(int argc, char *argv[]) {
 		if (strcmp(argv[1], "--lb") == 0) {
 			argsexeced++;
 			std::cout << "LOADING BINARY" << std::endl;
-//            maze loadedMaze = loadMaze(argv[2]);
 			if (m.loadFromBin(argv[2]) == 1) {
 				return 1;
 			}
@@ -46,6 +47,7 @@ int main(int argc, char *argv[]) {
 			}
 			if (strcmp(argv[argsexeced + 1], "--sv") == 0) {
 				argsexeced++;
+				// check if a file name has been passed
 				if (argv[argsexeced + 1] == NULL) {
 					std::cerr << "No out file" << std::endl;
 					return 1;
@@ -54,6 +56,7 @@ int main(int argc, char *argv[]) {
 				m.saveToSVG(file);
 			} else if (strcmp(argv[argsexeced + 1], "--sb") == 0) {
 				argsexeced++;
+				// check if a file name has been passed
 				if (argv[argsexeced + 1] == NULL) {
 					std::cerr << "No out file" << std::endl;
 					return 1;
@@ -112,11 +115,14 @@ int main(int argc, char *argv[]) {
 			std::cout << "maze h: " << m.height << " maze w: " << m.width << std::endl;
 			std::cout << "total edges: " << m.edges_v.size() << std::endl;
 			std::cout << "Seed: " << m.seed << std::endl;
+
+
 			if (argsexeced + 1 > argc) {
 				return 0;
 			}
 			if (strcmp(argv[argsexeced + 1], "--sv") == 0) {
 				argsexeced++;
+				// check if a file name has been passed
 				if (argv[argsexeced + 1] == NULL) {
 					std::cerr << "No out file" << std::endl;
 					return 1;
@@ -125,6 +131,7 @@ int main(int argc, char *argv[]) {
 				m.saveToSVG(file);
 			} else if (strcmp(argv[argsexeced + 1], "--sb") == 0) {
 				argsexeced++;
+				// check if a file name has been passed
 				if (argv[argsexeced + 1] == NULL) {
 					std::cerr << "No out file" << std::endl;
 					return 1;
