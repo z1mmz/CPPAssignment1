@@ -13,6 +13,8 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 	maze m = maze();
+	computePath * e;
+	e = new bfsSolver();
 	std::string help = "./mazer --lb filename.maze --sv filename.svg"
 			"# load binary file and save svg file \n"
 			"./mazer --g seed --sb filename.maze # generate with seed value,"
@@ -47,6 +49,8 @@ int main(int argc, char *argv[]) {
 			}
 			if (strcmp(argv[argsexeced + 1], "--sv") == 0) {
 				argsexeced++;
+				argsexeced++;
+				m = e->solve(m);
 				// check if a file name has been passed
 				if (argv[argsexeced + 1] == NULL) {
 					std::cerr << "No out file" << std::endl;
@@ -122,6 +126,7 @@ int main(int argc, char *argv[]) {
 			}
 			if (strcmp(argv[argsexeced + 1], "--sv") == 0) {
 				argsexeced++;
+				m = e->solve(m);
 				// check if a file name has been passed
 				if (argv[argsexeced + 1] == NULL) {
 					std::cerr << "No out file" << std::endl;

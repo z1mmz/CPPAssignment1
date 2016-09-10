@@ -15,6 +15,8 @@
 #include <bitset>
 #include <sstream>
 #include "mazegen.h"
+#include "computePath.h"
+#include "bfsSolver.h"
 // #include "maze.h"
 
 // #include "mazesaver.h"

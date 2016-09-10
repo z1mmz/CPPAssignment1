@@ -40,6 +40,8 @@ class maze {
 public:
 	int width;
 	int height;
+	cell  start;
+	cell  end;
 	long seed;
 	edge_vec_t edges_v;
 	cell_vec_t cell_v;

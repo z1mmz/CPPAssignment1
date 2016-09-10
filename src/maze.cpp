@@ -26,6 +26,8 @@ maze::maze(int w, int h) {
 		}
 		cells.push_back(coll);
 	}
+	start = cells[0][0];
+	end = cells[w-1][h-1];
 
 }
 
@@ -46,6 +48,8 @@ int maze::initMaze(int w, int h) {
 		}
 		cells.push_back(coll);
 	}
+	start = cells[0][0];
+	end = cells[w-1][h-1];
 	return 0;
 }
 

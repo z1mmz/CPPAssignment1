@@ -43,6 +43,8 @@ maze genABMaze(long seed, int w, int h) {
 						e.y2 = s.y - 1;
 						ABMaze.edges_v.push_back(e);
 						ABMaze.cells[s.x][s.y - 1].visited = true;
+						ABMaze.cells[s.x][s.y].connected.push_back(&ABMaze.cells[s.x][s.y-1]);
+						ABMaze.cells[s.x][s.y-1].connected.push_back(&ABMaze.cells[s.x][s.y]);
 						s = ABMaze.cells[s.x][s.y - 1];
 						unvisted--;
 					} else {
@@ -61,6 +63,8 @@ maze genABMaze(long seed, int w, int h) {
 						e.y2 = s.y + 1;
 						ABMaze.edges_v.push_back(e);
 						ABMaze.cells[s.x][s.y + 1].visited = true;
+						ABMaze.cells[s.x][s.y].connected.push_back(&ABMaze.cells[s.x][s.y+1]);
+						ABMaze.cells[s.x][s.y+1].connected.push_back(&ABMaze.cells[s.x][s.y]);
 						s = ABMaze.cells[s.x][s.y + 1];
 						unvisted--;
 					} else {
@@ -80,6 +84,8 @@ maze genABMaze(long seed, int w, int h) {
 						e.y2 = s.y;
 						ABMaze.edges_v.push_back(e);
 						ABMaze.cells[s.x - 1][s.y].visited = true;
+						ABMaze.cells[s.x][s.y].connected.push_back(&ABMaze.cells[s.x-1][s.y]);
+						ABMaze.cells[s.x-1][s.y].connected.push_back(&ABMaze.cells[s.x][s.y]);
 						s = ABMaze.cells[s.x - 1][s.y];
 						unvisted--;
 					} else {
@@ -98,6 +104,8 @@ maze genABMaze(long seed, int w, int h) {
 						e.y2 = s.y;
 						ABMaze.edges_v.push_back(e);
 						ABMaze.cells[s.x + 1][s.y].visited = true;
+						ABMaze.cells[s.x][s.y].connected.push_back(&ABMaze.cells[s.x+1][s.y]);
+						ABMaze.cells[s.x+1][s.y].connected.push_back(&ABMaze.cells[s.x][s.y]);
 						s = ABMaze.cells[s.x + 1][s.y];
 						unvisted--;
 					} else {
@@ -111,7 +119,9 @@ maze genABMaze(long seed, int w, int h) {
 	}
 	auto end_t = std::chrono::high_resolution_clock::now();
 
-
+	ABMaze.start = ABMaze.cells[0][0];
+	ABMaze.end = ABMaze.cells[w-1][h-1];
+	std::cout << ABMaze.start.connected.size() << "size of start connected";
 	std::cout << "Generated maze in: "
 			  << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
 			  << " milliseconds"
