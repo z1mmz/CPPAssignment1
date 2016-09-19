@@ -40,6 +40,13 @@ maze bfsSolver::solve(maze m) {
 //
 		if (current.y == m.end.y && current.x == m.end.x){
 			std::cout << "SOLVED" << std::endl;
+			cell temp = m.end;
+			while(temp.x != m.start.x && temp.y != m.start.y){
+				std::cout << temp.x << " " << temp.y << std::endl;
+//				std::cout << temp.parent_x << " " << temp.parent_x << std::endl;
+				temp = m.cells[temp.parent_x][temp.parent_x];
+//				std::cout << temp->x << " " << temp->y << std::endl;
+			}
 			return m ;
 		}
 	visited[current.x][current.y] = 1;
@@ -50,10 +57,15 @@ maze bfsSolver::solve(maze m) {
 			edge e = current.connected[i];
 			if (e.x1 == current.x && e.y1 == current.y){
 				if(visited[e.x2][e.y2] == 0) {
+					m.cells[e.x2][e.y2].parent_y = e.y2;
+					m.cells[e.x2][e.y2].parent_x = e.x2;
+					std::cout << m.cells[e.x2][e.y2].parent_x << " " << m.cells[e.x2][e.y2].parent_y << std::endl;
 					toVisit.push(m.cells[e.x2][e.y2]);
 				}
 			} else{
 				if(visited[e.x1][e.y1] == 0) {
+					m.cells[e.x1][e.y1].parent_y =e.y1;
+					m.cells[e.x1][e.y1].parent_x =e.x1;
 					toVisit.push(m.cells[e.x1][e.y1]);
 				}
 			}

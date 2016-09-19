@@ -29,6 +29,8 @@ struct cell {
 	int x;
 	std::vector<edge> connected;
 	bool visited;
+	int parent_x;
+	int parent_y;
 
 };
 
