@@ -30,29 +30,45 @@ maze bfsSolver::solve(maze m) {
 	}
 	std::cout << "BFS" << std::endl;
 	toVisit.push(current);
-	cell * test = m.start.connected[0];
-	test->y;
+
+//	test.y;
+	int z = 0;
 	while (!toVisit.empty()) {
-		std::cout << "POP" << std::endl;
+
 //	current->connected[1];
 
+//
+		if (current.y == m.end.y && current.x == m.end.x){
+			std::cout << "SOLVED" << std::endl;
+			return m ;
+		}
 	visited[current.x][current.y] = 1;
-	std::cout << "visited ?  "<< visited[current.x][current.y]  << std::endl;;
-		for (cell *cellTemp : current.connected) {
-
-//		std::cout << "Count: " << visited.count(*cellTemp) << std::endl;
-
-
-			if (visited[cellTemp->x][cellTemp->y] == 0) {
-				toVisit.push(*cellTemp);
-				std::cout << "Push: " << cellTemp->y << std::endl;
+		z++;
+		std::cout << "to visit  "<< toVisit.size() << std::endl;
+	std::cout << "visited ?  "<< z << std::endl;
+		for (int i = 0; i < current.connected.size() ; i++) {
+			edge e = current.connected[i];
+			if (e.x1 == current.x && e.y1 == current.y){
+				if(visited[e.x2][e.y2] == 0) {
+					toVisit.push(m.cells[e.x2][e.y2]);
+				}
+			} else{
+				if(visited[e.x1][e.y1] == 0) {
+					toVisit.push(m.cells[e.x1][e.y1]);
+				}
 			}
 		}
 		current = toVisit.front();
+
 		toVisit.pop();
-
-
+		std::cout << "POP" << std::endl;
 	}
+
+
+
+	std::cout << "visited: " << z;
+
+
 	return m;
 
 }

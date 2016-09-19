@@ -27,7 +27,7 @@ enum direction {
 struct cell {
 	int y;
 	int x;
-	std::vector<cell *> connected;
+	std::vector<edge> connected;
 	bool visited;
 
 };
@@ -40,8 +40,8 @@ class maze {
 public:
 	int width;
 	int height;
-	cell  start;
-	cell  end;
+	cell start;
+	cell end;
 	long seed;
 	edge_vec_t edges_v;
 	cell_vec_t cell_v;
