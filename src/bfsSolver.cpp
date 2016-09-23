@@ -17,7 +17,7 @@ using namespace std;
 
 maze bfsSolver::solve(maze m) {
 	cell current = m.start;
-	m.start.y;
+
 //	std::set<cell> visited;
 	std::queue <cell> toVisit;
 	vector <vector<int>> visited;
@@ -40,13 +40,22 @@ maze bfsSolver::solve(maze m) {
 //
 		if (current.y == m.end.y && current.x == m.end.x){
 			std::cout << "SOLVED" << std::endl;
-			cell temp = m.end;
-			while(temp.x != m.start.x && temp.y != m.start.y){
-				std::cout << temp.x << " " << temp.y << std::endl;
+			cell temp = m.cells[m.end.x][m.end.y];
+//			std::cout << temp.x << " " << temp.y << std::endl;
+//			std::cout << temp.parent_x << " parararar " << temp.parent_x << std::endl;
+
+			while(temp.x != 0 && temp.y != 0){
+
 //				std::cout << temp.parent_x << " " << temp.parent_x << std::endl;
-				temp = m.cells[temp.parent_x][temp.parent_x];
-//				std::cout << temp->x << " " << temp->y << std::endl;
+				temp = m.cells[temp.parent_x][temp.parent_y];
+				std::cout << temp.x << " " << temp.y << std::endl;
+				std::cout << "got a new cell" << std::endl;
+//				std::cout << temp.x << " " << temp.y << std::endl;
 			}
+			std::cout << temp.x << " " << temp.y << std::endl;
+			std::cout << temp.parent_x << " " << temp.parent_y << std::endl;
+			std::cout << "Start: " << m.start.x << " " << m.start.y << std::endl;
+			std::cout << "End: " << m.end.x << " " << m.end.y << std::endl;
 			return m ;
 		}
 	visited[current.x][current.y] = 1;
@@ -57,15 +66,20 @@ maze bfsSolver::solve(maze m) {
 			edge e = current.connected[i];
 			if (e.x1 == current.x && e.y1 == current.y){
 				if(visited[e.x2][e.y2] == 0) {
-					m.cells[e.x2][e.y2].parent_y = e.y2;
-					m.cells[e.x2][e.y2].parent_x = e.x2;
-					std::cout << m.cells[e.x2][e.y2].parent_x << " " << m.cells[e.x2][e.y2].parent_y << std::endl;
+
+					m.cells[e.x2][e.y2].parent_y = e.y1;
+					m.cells[e.x2][e.y2].parent_x = e.x1;
+					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
+					std::cout << "Parents: "<< m.cells[e.x2][e.y2].parent_x << " " << m.cells[e.x2][e.y2].parent_y << std::endl;
 					toVisit.push(m.cells[e.x2][e.y2]);
 				}
 			} else{
 				if(visited[e.x1][e.y1] == 0) {
-					m.cells[e.x1][e.y1].parent_y =e.y1;
-					m.cells[e.x1][e.y1].parent_x =e.x1;
+					m.cells[e.x1][e.y1].parent_y = e.y2;
+					m.cells[e.x1][e.y1].parent_x = e.x2;
+					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
+					std::cout << "Parents: "<< m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
+//					std::cout << m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
 					toVisit.push(m.cells[e.x1][e.y1]);
 				}
 			}
@@ -73,7 +87,7 @@ maze bfsSolver::solve(maze m) {
 		current = toVisit.front();
 
 		toVisit.pop();
-		std::cout << "POP" << std::endl;
+//		std::cout << "POP" << std::endl;
 	}
 
 
