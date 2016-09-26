@@ -17,6 +17,7 @@
 #include "mazegen.h"
 #include "computePath.h"
 #include "bfsSolver.h"
+#include "dfsSolver.h"
 // #include "maze.h"
 
 // #include "mazesaver.h"

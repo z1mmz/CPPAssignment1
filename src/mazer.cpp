@@ -14,7 +14,7 @@ using namespace std;
 int main(int argc, char *argv[]) {
 	maze m = maze();
 	computePath * e;
-	e = new bfsSolver();
+	e = new dfsSolver();
 	std::string help = "./mazer --lb filename.maze --sv filename.svg"
 			"# load binary file and save svg file \n"
 			"./mazer --g seed --sb filename.maze # generate with seed value,"

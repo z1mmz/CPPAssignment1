@@ -6,22 +6,19 @@
  * Student ID: s3495671
  * Course Code: COSC1254
  * Program Code: BP094
- * Created on 9/09/16.
+ * Created on 26/09/16.
  * */
 
 //
 
-#include "bfsSolver.h"
-
+#include "dfsSolver.h"
 using namespace std;
-
-maze bfsSolver::solve(maze m) {
+maze dfsSolver::solve(maze m) {
 	cell current = m.start;
+	std::stack <cell> toVisit;
 
-//	std::set<cell> visited;
+	vector<vector<int>> visited;
 
-	std::queue <cell> toVisit;
-	vector <vector<int>> visited;
 	for(int i = 0 ; i <= m.width; i++){
 		std::vector<int> col;
 		for(int x = 0 ; x <= m.height; x++){
@@ -63,10 +60,10 @@ maze bfsSolver::solve(maze m) {
 //			std::cout << "End: " << m.end.x << " " << m.end.y << std::endl;
 			return m ;
 		}
-	visited[current.x][current.y] = 1;
+		visited[current.x][current.y] = 1;
 		z++;
 		std::cout << "to visit  "<< toVisit.size() << std::endl;
-	std::cout << "visited ?  "<< z << std::endl;
+		std::cout << "visited ?  "<< z << std::endl;
 		for (int i = 0; i < current.connected.size() ; i++) {
 			edge e = current.connected[i];
 			if (e.x1 == current.x && e.y1 == current.y){
@@ -89,7 +86,7 @@ maze bfsSolver::solve(maze m) {
 				}
 			}
 		}
-		current = toVisit.front();
+		current = toVisit.top();
 
 		toVisit.pop();
 //		std::cout << "POP" << std::endl;
