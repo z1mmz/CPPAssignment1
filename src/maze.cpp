@@ -78,10 +78,10 @@ int maze::saveToSVG(std::string file) {
 //			std::cout << temp.x << " " << temp.y << std::endl;
 //			std::cout << temp.parent_x << " parararar " << temp.parent_x << std::endl;
 
-		while(temp.x != start.x && temp.y != start.y){
+		while(temp.x != start.x || temp.y != start.y){
 //			std::cout << temp.x << " " << temp.y << std::endl;
 //				std::cout << temp.parent_x << " " << temp.parent_x << std::endl;
-			temp = cells[temp.parent_x][temp.parent_y];
+
 //				std::cout << "got a new cell" << std::endl;
 //				std::cout << temp.x << " " << temp.y << std::endl;
 			fOut << "<line stroke='red' stroke-width='4' ";
@@ -89,6 +89,7 @@ int maze::saveToSVG(std::string file) {
 			fOut << "y1='" << (temp.y + 1) * 10 << "' ";
 			fOut << "x2='" << (temp.parent_x + 1) * 10 << "' ";
 			fOut << "y2='" << (temp.parent_y + 1) * 10 << "' /> \n";
+			temp = cells[temp.parent_x][temp.parent_y];
 		}
 		fOut << "</svg>";
 
