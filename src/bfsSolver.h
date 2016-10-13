@@ -14,7 +14,6 @@
 #ifndef ASSIGNMENT1_BFSSOLVER_H
 #define ASSIGNMENT1_BFSSOLVER_H
 #include "maze.h"
-
 #include "computePath.h"
 class bfsSolver:public computePath{
 public:

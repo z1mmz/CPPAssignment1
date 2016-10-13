@@ -7,4 +7,17 @@
  * Program Code: BP094
  * */
 #include "maze.h"
-maze genABMaze(long seed, int w, int h);
+#ifndef CPPASSIGNMENT_GEN_H
+#define CPPASSIGNMENT_GEN_H
+#include <iostream>
+#include <random>
+
+#include <chrono>
+class generator{
+public:
+	generator();
+	virtual maze genMaze(long seed, int w, int h);
+
+};
+
+#endif

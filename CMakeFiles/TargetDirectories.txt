@@ -1,0 +1,3 @@
+/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/rebuild_cache.dir
+/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/edit_cache.dir
+/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/mazer.dir

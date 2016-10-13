@@ -14,6 +14,7 @@
 maze::maze(int w, int h) {
 	width = w;
 	height = h;
+	solved = false;
 
 	for (int x = 0; x < w; x++) {
 		cell_vec_t coll;
@@ -36,7 +37,7 @@ maze::maze(void) {}
 int maze::initMaze(int w, int h) {
 	width = w;
 	height = h;
-
+	solved = false;
 	for (int x = 0; x < w; x++) {
 		cell_vec_t coll;
 		for (int i = 0; i < h; i++) {
@@ -77,20 +78,21 @@ int maze::saveToSVG(std::string file) {
 		cell temp = cells[end.x][end.y];
 //			std::cout << temp.x << " " << temp.y << std::endl;
 //			std::cout << temp.parent_x << " parararar " << temp.parent_x << std::endl;
-
-		while(temp.x != start.x || temp.y != start.y){
+if(solved == true) {
+	while (temp.x != start.x || temp.y != start.y) {
 //			std::cout << temp.x << " " << temp.y << std::endl;
 //				std::cout << temp.parent_x << " " << temp.parent_x << std::endl;
 
 //				std::cout << "got a new cell" << std::endl;
 //				std::cout << temp.x << " " << temp.y << std::endl;
-			fOut << "<line stroke='red' stroke-width='4' ";
-			fOut << "x1='" << (temp.x + 1) * 10 << "' ";
-			fOut << "y1='" << (temp.y + 1) * 10 << "' ";
-			fOut << "x2='" << (temp.parent_x + 1) * 10 << "' ";
-			fOut << "y2='" << (temp.parent_y + 1) * 10 << "' /> \n";
-			temp = cells[temp.parent_x][temp.parent_y];
-		}
+		fOut << "<line stroke='red' stroke-width='4' ";
+		fOut << "x1='" << (temp.x + 1) * 10 << "' ";
+		fOut << "y1='" << (temp.y + 1) * 10 << "' ";
+		fOut << "x2='" << (temp.parent_x + 1) * 10 << "' ";
+		fOut << "y2='" << (temp.parent_y + 1) * 10 << "' /> \n";
+		temp = cells[temp.parent_x][temp.parent_y];
+	}
+}
 		fOut << "</svg>";
 
 	} else {

@@ -13,6 +13,8 @@
 
 #ifndef ASSIGNMENT1_DIJSOLVER_H
 #define ASSIGNMENT1_DIJSOLVER_H
+#include "computePath.h"
+#include <stack>
 class dijSolver:public computePath{
 public:
 	maze solve(maze) override;

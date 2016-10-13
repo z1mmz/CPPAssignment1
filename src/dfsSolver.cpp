@@ -39,25 +39,15 @@ maze dfsSolver::solve(maze m) {
 		if (current.y == m.end.y && current.x == m.end.x){
 			std::cout << "SOLVED" << std::endl;
 			cell temp = m.cells[m.end.x][m.end.y];
-//			std::cout << temp.x << " " << temp.y << std::endl;
-//			std::cout << temp.parent_x << " parararar " << temp.parent_x << std::endl;
 
 			while(temp.x != 0 || temp.y != 0){
 
-//				std::cout << temp.parent_x << " " << temp.parent_x << std::endl;
 				temp = m.cells[temp.parent_x][temp.parent_y];
 				std::cout << temp.x << " " << temp.y << std::endl;
-//				std::cout << "TRUE x = " << (temp.x != 0) << std::endl;
-//				std::cout << "TRUE Y = " << (temp.y != 0) << std::endl;
-//				std::cout << "TRUE x and y = " << (temp.x != 0&&temp.y != 0) << std::endl;
-//				std::cout << "got a new cell" << std::endl;
-//				std::cout << temp.x << " " << temp.y << std::endl;
+
 			}
-//			std::cout << temp.x << " " << temp.y << std::endl;
-//			std::cout << "TRUE = " << ((0 != 0) && (8 != 0)) << "False = " << !false<< std::endl;
-//			std::cout << temp.parent_x << " " << temp.parent_y << "True/False "<< (temp.x != 0 && temp.y != 0) << std::endl;
-//			std::cout << "Start: " << m.start.x << " " << m.start.y << std::endl;
-//			std::cout << "End: " << m.end.x << " " << m.end.y << std::endl;
+
+			m.solved = true;
 			return m ;
 		}
 		visited[current.x][current.y] = 1;

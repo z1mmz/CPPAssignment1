@@ -6,13 +6,12 @@
  * Student ID: s3495671
  * Course Code: COSC1254
  * Program Code: BP094
- * Created on 11/10/16.
+ * Created on 13/10/16.
  * */
 
 //
 
-#include "dijSolver.h"
-maze dijSolver::solve(maze m) {
-
-
+#include "ellerGen.h"
+maze ellerGen::genMaze(long seed, int w, int h) {
+	
 }

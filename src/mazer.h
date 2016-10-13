@@ -6,6 +6,8 @@
  * Course Code: COSC1254
  * Program Code: BP094
  * */
+#ifndef MAZER
+#define MAZER
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
@@ -14,12 +16,28 @@
 #include <fstream>
 #include <bitset>
 #include <sstream>
-#include "mazegen.h"
 #include "computePath.h"
 #include "bfsSolver.h"
 #include "dfsSolver.h"
-// #include "maze.h"
+#include "abGen.h"
 
+
+// #include "maze.h"
+void genMaze(std::string flag,std::vector<std::string> vars);
+void saveMaze(std::string flag,std::vector<std::string> vars);
+void loadMaze(std::string flag,std::vector<std::string> vars);
+void solveMaze(std::string flag,std::vector<std::string> vars);
+enum flags{
+	ga,
+	ge,
+	pm,
+	pe,
+	pb,
+	pd,
+	lb,
+	sv
+};
+#endif
 // #include "mazesaver.h"
 
 // std::vector<std::vector<std::string>> arguments;

@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/dfsSolver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/computePath.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/maze.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/bfsSolver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/dfsSolver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/bfsSolver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/computePath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/maze.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazegen.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/dijSolver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mazegen.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/dijSolver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+    </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="Header Search Paths">
-        <CLASSES />
-        <SOURCES />
+        <CLASSES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
