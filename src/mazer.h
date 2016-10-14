@@ -20,6 +20,8 @@
 #include "bfsSolver.h"
 #include "dfsSolver.h"
 #include "abGen.h"
+#include "heap_set.h"
+#include "dijSolver.h"
 
 
 // #include "maze.h"

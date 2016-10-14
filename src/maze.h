@@ -31,6 +31,7 @@ struct cell {
 	bool visited;
 	int parent_x;
 	int parent_y;
+	int cost;
 };
 
 typedef std::vector<cell> cell_vec_t;
@@ -48,6 +49,7 @@ public:
 	edge_vec_t edges_v;
 	cell_vec_t cell_v;
 	std::vector<cell_vec_t> cells;
+
 
 	maze(int w, int h);
 

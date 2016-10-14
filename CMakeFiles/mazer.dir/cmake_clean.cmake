@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mazer.dir/src/mazer.cpp.o"
   "CMakeFiles/mazer.dir/src/dijSolver.cpp.o"
   "CMakeFiles/mazer.dir/src/computePath.cpp.o"
+  "CMakeFiles/mazer.dir/src/ellerGen.cpp.o"
   "CMakeFiles/mazer.dir/src/abGen.cpp.o"
   "CMakeFiles/mazer.dir/src/bfsSolver.cpp.o"
   "CMakeFiles/mazer.dir/src/mazegen.cpp.o"

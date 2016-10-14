@@ -177,9 +177,33 @@ CMakeFiles/mazer.dir/src/computePath.cpp.o.provides: CMakeFiles/mazer.dir/src/co
 CMakeFiles/mazer.dir/src/computePath.cpp.o.provides.build: CMakeFiles/mazer.dir/src/computePath.cpp.o
 
 
+CMakeFiles/mazer.dir/src/ellerGen.cpp.o: CMakeFiles/mazer.dir/flags.make
+CMakeFiles/mazer.dir/src/ellerGen.cpp.o: src/ellerGen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mazer.dir/src/ellerGen.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mazer.dir/src/ellerGen.cpp.o -c /home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.cpp
+
+CMakeFiles/mazer.dir/src/ellerGen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mazer.dir/src/ellerGen.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.cpp > CMakeFiles/mazer.dir/src/ellerGen.cpp.i
+
+CMakeFiles/mazer.dir/src/ellerGen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mazer.dir/src/ellerGen.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.cpp -o CMakeFiles/mazer.dir/src/ellerGen.cpp.s
+
+CMakeFiles/mazer.dir/src/ellerGen.cpp.o.requires:
+
+.PHONY : CMakeFiles/mazer.dir/src/ellerGen.cpp.o.requires
+
+CMakeFiles/mazer.dir/src/ellerGen.cpp.o.provides: CMakeFiles/mazer.dir/src/ellerGen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/ellerGen.cpp.o.provides.build
+.PHONY : CMakeFiles/mazer.dir/src/ellerGen.cpp.o.provides
+
+CMakeFiles/mazer.dir/src/ellerGen.cpp.o.provides.build: CMakeFiles/mazer.dir/src/ellerGen.cpp.o
+
+
 CMakeFiles/mazer.dir/src/abGen.cpp.o: CMakeFiles/mazer.dir/flags.make
 CMakeFiles/mazer.dir/src/abGen.cpp.o: src/abGen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mazer.dir/src/abGen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mazer.dir/src/abGen.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mazer.dir/src/abGen.cpp.o -c /home/wolf/Documents/cPlusPlus/assignment1/src/abGen.cpp
 
 CMakeFiles/mazer.dir/src/abGen.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/mazer.dir/src/abGen.cpp.o.provides.build: CMakeFiles/mazer.dir/src/ab
 
 CMakeFiles/mazer.dir/src/bfsSolver.cpp.o: CMakeFiles/mazer.dir/flags.make
 CMakeFiles/mazer.dir/src/bfsSolver.cpp.o: src/bfsSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mazer.dir/src/bfsSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mazer.dir/src/bfsSolver.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mazer.dir/src/bfsSolver.cpp.o -c /home/wolf/Documents/cPlusPlus/assignment1/src/bfsSolver.cpp
 
 CMakeFiles/mazer.dir/src/bfsSolver.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/mazer.dir/src/bfsSolver.cpp.o.provides.build: CMakeFiles/mazer.dir/sr
 
 CMakeFiles/mazer.dir/src/mazegen.cpp.o: CMakeFiles/mazer.dir/flags.make
 CMakeFiles/mazer.dir/src/mazegen.cpp.o: src/mazegen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mazer.dir/src/mazegen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mazer.dir/src/mazegen.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mazer.dir/src/mazegen.cpp.o -c /home/wolf/Documents/cPlusPlus/assignment1/src/mazegen.cpp
 
 CMakeFiles/mazer.dir/src/mazegen.cpp.i: cmake_force
@@ -256,6 +280,7 @@ mazer_OBJECTS = \
 "CMakeFiles/mazer.dir/src/mazer.cpp.o" \
 "CMakeFiles/mazer.dir/src/dijSolver.cpp.o" \
 "CMakeFiles/mazer.dir/src/computePath.cpp.o" \
+"CMakeFiles/mazer.dir/src/ellerGen.cpp.o" \
 "CMakeFiles/mazer.dir/src/abGen.cpp.o" \
 "CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" \
 "CMakeFiles/mazer.dir/src/mazegen.cpp.o"
@@ -268,12 +293,13 @@ mazer: CMakeFiles/mazer.dir/src/dfsSolver.cpp.o
 mazer: CMakeFiles/mazer.dir/src/mazer.cpp.o
 mazer: CMakeFiles/mazer.dir/src/dijSolver.cpp.o
 mazer: CMakeFiles/mazer.dir/src/computePath.cpp.o
+mazer: CMakeFiles/mazer.dir/src/ellerGen.cpp.o
 mazer: CMakeFiles/mazer.dir/src/abGen.cpp.o
 mazer: CMakeFiles/mazer.dir/src/bfsSolver.cpp.o
 mazer: CMakeFiles/mazer.dir/src/mazegen.cpp.o
 mazer: CMakeFiles/mazer.dir/build.make
 mazer: CMakeFiles/mazer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable mazer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable mazer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mazer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -286,6 +312,7 @@ CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/dfsSolver.cpp.o.requires
 CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/mazer.cpp.o.requires
 CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/dijSolver.cpp.o.requires
 CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/computePath.cpp.o.requires
+CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/ellerGen.cpp.o.requires
 CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/abGen.cpp.o.requires
 CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/bfsSolver.cpp.o.requires
 CMakeFiles/mazer.dir/requires: CMakeFiles/mazer.dir/src/mazegen.cpp.o.requires

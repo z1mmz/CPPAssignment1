@@ -24,6 +24,12 @@ bool isAFlag(std::string a){
 }
 maze m = maze();
 int main(int argc, char *argv[]) {
+
+//	heap_set<int> *a = new heap_set<int>();
+//	a->insert(1);
+//	a->insert(2);
+//	std::cout << a << std::endl;
+//	a->remove(2);
 	m = maze();
 
 	funcs.emplace("--ga",&genMaze);
@@ -259,6 +265,9 @@ void solveMaze(std::string flag,std::vector<std::string> vars){
 	}
 	if(flag == "--pd"){
 		e = new dfsSolver();
+	}
+	if(flag == "--pm"){
+		e = new dijSolver();
 	}
 	m = e->solve(m);
 

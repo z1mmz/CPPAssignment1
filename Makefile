@@ -258,6 +258,33 @@ src/dijSolver.cpp.s:
 	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/dijSolver.cpp.s
 .PHONY : src/dijSolver.cpp.s
 
+src/ellerGen.o: src/ellerGen.cpp.o
+
+.PHONY : src/ellerGen.o
+
+# target to build an object file
+src/ellerGen.cpp.o:
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/ellerGen.cpp.o
+.PHONY : src/ellerGen.cpp.o
+
+src/ellerGen.i: src/ellerGen.cpp.i
+
+.PHONY : src/ellerGen.i
+
+# target to preprocess a source file
+src/ellerGen.cpp.i:
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/ellerGen.cpp.i
+.PHONY : src/ellerGen.cpp.i
+
+src/ellerGen.s: src/ellerGen.cpp.s
+
+.PHONY : src/ellerGen.s
+
+# target to generate assembly for a file
+src/ellerGen.cpp.s:
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/ellerGen.cpp.s
+.PHONY : src/ellerGen.cpp.s
+
 src/maze.o: src/maze.cpp.o
 
 .PHONY : src/maze.o
@@ -363,6 +390,9 @@ help:
 	@echo "... src/dijSolver.o"
 	@echo "... src/dijSolver.i"
 	@echo "... src/dijSolver.s"
+	@echo "... src/ellerGen.o"
+	@echo "... src/ellerGen.i"
+	@echo "... src/ellerGen.s"
 	@echo "... src/maze.o"
 	@echo "... src/maze.i"
 	@echo "... src/maze.s"

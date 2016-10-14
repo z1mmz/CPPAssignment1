@@ -13,25 +13,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/abGen.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/abGen.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ellerGen.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ellerGen.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/heap_set.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/makefile" afterPath="$PROJECT_DIR$/makefileold" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/abGen.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/abGen.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/computePath.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/computePath.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/maze.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/maze.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mazer" afterPath="$PROJECT_DIR$/mazer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/assignment1.iml" afterPath="$PROJECT_DIR$/.idea/assignment1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bfsSolver.cpp" afterPath="$PROJECT_DIR$/src/bfsSolver.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bfsSolver.h" afterPath="$PROJECT_DIR$/src/bfsSolver.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dfsSolver.cpp" afterPath="$PROJECT_DIR$/src/dfsSolver.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/CXX.includecache" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/build.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.internal" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/link.txt" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/progress.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.svg" afterPath="$PROJECT_DIR$/a.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolver.cpp" afterPath="$PROJECT_DIR$/src/dijSolver.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolver.h" afterPath="$PROJECT_DIR$/src/dijSolver.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.cpp" afterPath="$PROJECT_DIR$/src/maze.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/heap_set.h" afterPath="$PROJECT_DIR$/src/heap_set.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.h" afterPath="$PROJECT_DIR$/src/maze.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazegen.cpp" afterPath="$PROJECT_DIR$/src/mazegen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazegen.h" afterPath="$PROJECT_DIR$/src/mazegen.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.h" afterPath="$PROJECT_DIR$/src/mazer.h" />
     </list>
@@ -53,31 +59,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="abGen.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/abGen.h">
+      <file leaf-file-name="maze.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="291">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <element signature="e#195#212#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="abGen.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/abGen.cpp">
+      <file leaf-file-name="dfsSolver.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dfsSolver.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="15" />
+              <folding>
+                <element signature="e#258#282#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mazer.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mazer.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+            <state relative-caret-position="-3858">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
                 <element signature="e#163#187#0" expanded="true" />
               </folding>
@@ -85,53 +95,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mazer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mazer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="bfsSolver.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bfsSolver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="156">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ellerGen.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
+      <file leaf-file-name="dijSolver.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijSolver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="583">
+              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heap_set.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="heap_set.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/heap_set.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ellerGen.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ellerGen.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="computePath.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/computePath.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="126">
+              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
               <folding>
-                <element signature="e#231#248#0" expanded="true" />
+                <element signature="e#39#56#0" expanded="true" />
+                <element signature="e#85#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,20 +141,28 @@
       <file leaf-file-name="bfsSolver.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bfsSolver.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="e#257#274#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dfsSolver.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dfsSolver.cpp">
+      <file leaf-file-name="dijSolver.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijSolver.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+            <state relative-caret-position="306">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maze.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -176,21 +185,22 @@
         <option value="$PROJECT_DIR$/src/computePath.h" />
         <option value="$PROJECT_DIR$/src/dfsSolver.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/dijSolver.h" />
-        <option value="$PROJECT_DIR$/src/dijSolver.cpp" />
-        <option value="$PROJECT_DIR$/src/maze.h" />
         <option value="$PROJECT_DIR$/src/maze.cpp" />
         <option value="$PROJECT_DIR$/src/abGen.cpp" />
-        <option value="$PROJECT_DIR$/src/mazer.h" />
         <option value="$PROJECT_DIR$/src/bfsSolver.h" />
         <option value="$PROJECT_DIR$/src/abGen.h" />
         <option value="$PROJECT_DIR$/src/mazegen.cpp" />
         <option value="$PROJECT_DIR$/src/mazegen.h" />
-        <option value="$PROJECT_DIR$/src/bfsSolver.cpp" />
         <option value="$PROJECT_DIR$/src/dfsSolver.cpp" />
-        <option value="$PROJECT_DIR$/src/mazer.cpp" />
         <option value="$PROJECT_DIR$/src/ellerGen.h" />
         <option value="$PROJECT_DIR$/src/ellerGen.cpp" />
+        <option value="$PROJECT_DIR$/src/bfsSolver.cpp" />
+        <option value="$PROJECT_DIR$/src/heap_set.h" />
+        <option value="$PROJECT_DIR$/src/maze.h" />
+        <option value="$PROJECT_DIR$/src/dijSolver.h" />
+        <option value="$PROJECT_DIR$/src/mazer.h" />
+        <option value="$PROJECT_DIR$/src/mazer.cpp" />
+        <option value="$PROJECT_DIR$/src/dijSolver.cpp" />
       </list>
     </option>
   </component>
@@ -631,12 +641,12 @@
       <workItem from="1475882969633" duration="146000" />
       <workItem from="1476134860475" duration="3802000" />
       <workItem from="1476164670085" duration="1687000" />
-      <workItem from="1476311188471" duration="14531000" />
+      <workItem from="1476311188471" duration="29622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106140000" />
+    <option name="totallyTimeSpent" value="121231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="28" width="960" height="1018" extended-state="4" />
@@ -662,27 +672,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31049252" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -709,22 +698,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mazeloader.h" />
-    <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="140" column="0" selection-start-line="41" selection-start-column="4" selection-end-line="140" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mazesaver.h" />
     <entry file="file://$PROJECT_DIR$/src/mazer.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -826,24 +799,6 @@
     <entry file="file://$PROJECT_DIR$/readme" />
     <entry file="file://$PROJECT_DIR$/src/BfsSolver.cpp" />
     <entry file="file://$PROJECT_DIR$/src/BfsSolver.h" />
-    <entry file="file://$PROJECT_DIR$/src/dijSolver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#257#281#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dijSolver.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/makefileold">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -860,46 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dfsSolver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <element signature="e#258#282#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#195#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mazer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -919,7 +838,7 @@
         <state relative-caret-position="252">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#162#181#0" expanded="true" />
+            <element signature="e#162#181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -932,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bfsSolver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#257#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dfsSolver.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -950,31 +859,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-          <folding>
-            <element signature="e#163#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/computePath.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
-            <element signature="e#231#248#0" expanded="true" />
+            <element signature="e#231#248#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bfsSolver.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="53" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,6 +873,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -996,25 +895,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/abGen.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="-1361">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
+    <entry file="file://$PROJECT_DIR$/cachegrind.out.11901">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="-918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cachegrind.out.11878">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="e#195#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dfsSolver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#258#282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dijSolver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bfsSolver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/heap_set.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding>
+            <element signature="e#39#56#0" expanded="true" />
+            <element signature="e#85#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bfsSolver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mazer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dijSolver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3858">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="e#163#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
