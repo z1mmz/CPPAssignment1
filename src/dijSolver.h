@@ -16,6 +16,7 @@
 #include "computePath.h"
 #include <stack>
 #include <vector>
+#include <cmath>
 class dijSolver:public computePath{
 public:
 	maze solve(maze) override;

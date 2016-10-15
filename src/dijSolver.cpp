@@ -44,13 +44,27 @@ maze dijSolver::solve(maze m) {
 				x = e.x1;
 				y = e.y1;
 			}
+			//manhattan
+			// if(!visited[x][y]){
+			// 	m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
+			// 	m.cells[x][y].parent_x = current.x;
+			// 	m.cells[x][y].parent_y = current.y;
+			// 	toVisit.push(m.cells[x][y]);
+			// } else if (m.cells[x][y].cost < (abs(x - m.start.x) + abs( y - m.start.y))){
+			// 	m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
+			// 	m.cells[x][y].parent_x = current.x;
+			// 	m.cells[x][y].parent_y = current.y;
+			// 	toVisit.push(m.cells[x][y]);
+			// }
+
+			// euclidian
 			if(!visited[x][y]){
-				m.cells[x][y].cost = current.cost + 1;
+				m.cells[x][y].cost = sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2));
 				m.cells[x][y].parent_x = current.x;
 				m.cells[x][y].parent_y = current.y;
 				toVisit.push(m.cells[x][y]);
-			} else if (m.cells[x][y].cost > current.cost +1){
-				m.cells[x][y].cost = current.cost + 1;
+			} else if (m.cells[x][y].cost > sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2))){
+				m.cells[x][y].cost = sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2));
 				m.cells[x][y].parent_x = current.x;
 				m.cells[x][y].parent_y = current.y;
 				toVisit.push(m.cells[x][y]);
@@ -60,12 +74,14 @@ maze dijSolver::solve(maze m) {
 
 	}
 	cell temp = m.cells[m.end.x][m.end.y];
+int cost = temp.cost;
 	while(temp.x != 0 || temp.y != 0){
 
 		temp = m.cells[temp.parent_x][temp.parent_y];
 		std::cout << temp.x << " " << temp.y << std::endl;
 
 	}
+	std::cout << "cost: "<< cost << std::endl;
 	m.solved = true;
 	return m ;
 
