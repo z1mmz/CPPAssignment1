@@ -6,13 +6,13 @@
  * Student ID: s3495671
  * Course Code: COSC1254
  * Program Code: BP094
- * Created on 11/10/16.
+ * Created on 18/10/16.
  * */
 
 //
 
-#include "dijSolver.h"
-maze dijSolver::solve(maze maz) {
+#include "dijSolvereuclidian.h"
+maze dijSolvereu::solve(maze maz) {
 
 	m = maz;
 	current = m.start;
@@ -44,20 +44,20 @@ maze dijSolver::solve(maze maz) {
 				y = e.y1;
 			}
 			//manhattan
-			// if(!visited[x][y]){
-			// 	m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
-			// 	m.cells[x][y].parent_x = current.x;
-			// 	m.cells[x][y].parent_y = current.y;
-			// 	toVisit.push(m.cells[x][y]);
-			// } else if (m.cells[x][y].cost < (abs(x - m.start.x) + abs( y - m.start.y))){
-			// 	m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
-			// 	m.cells[x][y].parent_x = current.x;
-			// 	m.cells[x][y].parent_y = current.y;
-			// 	toVisit.push(m.cells[x][y]);
-			// }
+//			if(!visited[x][y]){
+//				m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
+//				m.cells[x][y].parent_x = current.x;
+//				m.cells[x][y].parent_y = current.y;
+//				toVisit.push(m.cells[x][y]);
+//			} else if (m.cells[x][y].cost < (abs(x - m.start.x) + abs( y - m.start.y))){
+//				m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
+//				m.cells[x][y].parent_x = current.x;
+//				m.cells[x][y].parent_y = current.y;
+//				toVisit.push(m.cells[x][y]);
+//			}
 
 			// euclidian
-			calculateDist(&current, &toVisit, &m, &visited);
+//			calculateDist(&current, &toVisit, &m, &visited);
 
 			if(!visited[x][y]){
 				m.cells[x][y].cost = sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2));
@@ -75,7 +75,7 @@ maze dijSolver::solve(maze maz) {
 
 	}
 	cell temp = m.cells[m.end.x][m.end.y];
-int cost = temp.cost;
+	int cost = temp.cost;
 	while(temp.x != 0 || temp.y != 0){
 
 		temp = m.cells[temp.parent_x][temp.parent_y];

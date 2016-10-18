@@ -17,5 +17,8 @@
 class ellerGen:public generator{
 	maze genMaze(long seed, int w, int h);
 
+private:
+	std::string cellToS(cell);
+	bool isDisjoint(std::vector<std::set<std::string>> , cell, cell);
 };
 #endif //CPPASSIGNMENT_ELLERGEN_H

@@ -267,7 +267,10 @@ void solveMaze(std::string flag,std::vector<std::string> vars){
 		e = new dfsSolver();
 	}
 	if(flag == "--pm"){
-		e = new dijSolver();
+		e = new dijSolvermanhattan();
+	}
+	if(flag == "--pe"){
+		e = new dijSolvereu();
 	}
 	m = e->solve(m);
 
