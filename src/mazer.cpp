@@ -222,7 +222,7 @@ int main(int argc, char *argv[]) {
 void genMaze(std::string flag,std::vector<std::string> vars){
 
 	generator * g;
-	g = new abGen();
+
 	int seed,w,h;
 	if (vars.size() == 3) {
 				seed = stoi(vars.at(0));
@@ -238,14 +238,23 @@ void genMaze(std::string flag,std::vector<std::string> vars){
 				return;
 			}
 	if(flag == "--ga") {
-		m = g->genMaze(seed, w, h);
-		std::cout << "maze h: " << m.height << " maze w: " << m.width << std::endl;
-		std::cout << "total edges: " << m.edges_v.size() << std::endl;
-		std::cout << "Seed: " << m.seed << std::endl;
+		g = new abGen();
+
 	}
 	if(flag == "--ge"){
-		std::cout << "GE" << std::endl;
+		g = new ellerGen();
+		std::cout << "ELLERS NOT SUPPORTED" << std::endl;
 	}
+	auto start_t = std::chrono::high_resolution_clock::now();
+	m = g->genMaze(seed, w, h);
+	auto end_t = std::chrono::high_resolution_clock::now();
+	std::cout << "Generated maze in: "
+			  << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
+			  << " milliseconds"
+			  << std::endl;
+	std::cout << "maze h: " << m.height << " maze w: " << m.width << std::endl;
+	std::cout << "total edges: " << m.edges_v.size() << std::endl;
+	std::cout << "Seed: " << m.seed << std::endl;
 }
 void saveMaze(std::string flag,std::vector<std::string> vars){
 	std::string file = vars[0];
@@ -272,8 +281,13 @@ void solveMaze(std::string flag,std::vector<std::string> vars){
 	if(flag == "--pe"){
 		e = new dijSolvereu();
 	}
+	auto start_t = std::chrono::high_resolution_clock::now();
 	m = e->solve(m);
-
+	auto end_t = std::chrono::high_resolution_clock::now();
+	std::cout << "Solved maze in: "
+			  << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
+			  << " milliseconds"
+			  << std::endl;
 }
 void loadMaze(std::string flag,std::vector<std::string> vars){
 	std::string file = vars[0];

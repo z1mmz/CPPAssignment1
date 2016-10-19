@@ -22,6 +22,7 @@
 #include "abGen.h"
 #include "heap_set.h"
 #include "dijSolver.h"
+#include "ellerGen.h"
 
 
 // #include "maze.h"

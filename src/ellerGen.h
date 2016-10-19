@@ -20,5 +20,9 @@ class ellerGen:public generator{
 private:
 	std::string cellToS(cell);
 	bool isDisjoint(std::vector<std::set<std::string>> , cell, cell);
+	bool same(cell,cell);
+	void add(cell,int);
+	void merge(cell,cell);
+	std::vector<std::set<std::string>> mergeSets(std::vector<std::set<std::string>> , cell, cell);
 };
 #endif //CPPASSIGNMENT_ELLERGEN_H

@@ -85,6 +85,10 @@ dijSolver.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.cpp
 set
 -
+algorithm
+-
+unordered_map
+-
 ellerGen.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.h
 
@@ -171,4 +175,6 @@ heap_set.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/heap_set.h
 dijSolver.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/dijSolver.h
+ellerGen.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.h
 

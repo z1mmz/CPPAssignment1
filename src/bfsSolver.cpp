@@ -40,23 +40,23 @@ maze bfsSolver::solve(maze m) {
 
 //
 		if (current.y == m.end.y && current.x == m.end.x){
-			std::cout << "SOLVED" << std::endl;
+//			std::cout << "SOLVED" << std::endl;
 			cell temp = m.cells[m.end.x][m.end.y];
 
 
-			while(temp.x != 0 || temp.y != 0){
-
-				temp = m.cells[temp.parent_x][temp.parent_y];
-				std::cout << temp.x << " " << temp.y << std::endl;
-
-			}
+//			while(temp.x != 0 || temp.y != 0){
+//
+//				temp = m.cells[temp.parent_x][temp.parent_y];
+////				std::cout << temp.x << " " << temp.y << std::endl;
+//
+//			}
 			m.solved = true;
 			return m ;
 		}
 	visited[current.x][current.y] = 1;
 		z++;
-		std::cout << "to visit  "<< toVisit.size() << std::endl;
-	std::cout << "visited ?  "<< z << std::endl;
+//		std::cout << "to visit  "<< toVisit.size() << std::endl;
+//	std::cout << "visited ?  "<< z << std::endl;
 		for (int i = 0; i < current.connected.size() ; i++) {
 			edge e = current.connected[i];
 			if (e.x1 == current.x && e.y1 == current.y){
@@ -64,16 +64,16 @@ maze bfsSolver::solve(maze m) {
 
 					m.cells[e.x2][e.y2].parent_y = e.y1;
 					m.cells[e.x2][e.y2].parent_x = e.x1;
-					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
-					std::cout << "Parents: "<< m.cells[e.x2][e.y2].parent_x << " " << m.cells[e.x2][e.y2].parent_y << std::endl;
+//					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
+//					std::cout << "Parents: "<< m.cells[e.x2][e.y2].parent_x << " " << m.cells[e.x2][e.y2].parent_y << std::endl;
 					toVisit.push(m.cells[e.x2][e.y2]);
 				}
 			} else{
 				if(visited[e.x1][e.y1] == 0) {
 					m.cells[e.x1][e.y1].parent_y = e.y2;
 					m.cells[e.x1][e.y1].parent_x = e.x2;
-					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
-					std::cout << "Parents: "<< m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
+//					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
+//					std::cout << "Parents: "<< m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
 //					std::cout << m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
 					toVisit.push(m.cells[e.x1][e.y1]);
 				}
@@ -87,7 +87,7 @@ maze bfsSolver::solve(maze m) {
 
 
 
-	std::cout << "visited: " << z;
+//	std::cout << "visited: " << z;
 
 
 	return m;

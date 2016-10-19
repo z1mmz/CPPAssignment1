@@ -26,7 +26,7 @@ maze abGen::genMaze(long seed, int w, int h) {
 	cell s = ABMaze.cells[rW(generator)][rH(generator)];
 	std::cout << "Starting maze generation loop" << std::endl;
 	long unvisted = w * h;
-	auto start_t = std::chrono::high_resolution_clock::now();
+//	auto start_t = std::chrono::high_resolution_clock::now();
 	ABMaze.seed = seed;
 	while (unvisted > 1) {
 
@@ -117,15 +117,15 @@ maze abGen::genMaze(long seed, int w, int h) {
 		}
 
 	}
-	auto end_t = std::chrono::high_resolution_clock::now();
+//	auto end_t = std::chrono::high_resolution_clock::now();
 
 	ABMaze.start = ABMaze.cells[0][0];
 	ABMaze.end = ABMaze.cells[w-1][h-1];
-	std::cout << ABMaze.start.connected.size() << "size of start connected";
-	std::cout << "Generated maze in: "
-			  << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
-			  << " milliseconds"
-			  << std::endl;
+//	std::cout << ABMaze.start.connected.size() << "size of start connected";
+//	std::cout << "Generated maze in: "
+//			  << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
+//			  << " milliseconds"
+//			  << std::endl;
 	return ABMaze;
 
 }

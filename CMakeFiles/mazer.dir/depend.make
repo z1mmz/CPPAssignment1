@@ -60,6 +60,7 @@ CMakeFiles/mazer.dir/src/mazer.cpp.o: src/dfsSolver.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/dijSolver.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/dijSolvereuclidian.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/dijsolvermanhattan.h
+CMakeFiles/mazer.dir/src/mazer.cpp.o: src/ellerGen.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/heap_set.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/maze.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/mazegen.h
