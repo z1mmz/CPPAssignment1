@@ -15,23 +15,22 @@
     <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/abGen.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/abGen.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/computePath.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/computePath.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/maze.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/maze.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a" afterPath="$PROJECT_DIR$/a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mazer" afterPath="$PROJECT_DIR$/mazer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/assignment1.iml" afterPath="$PROJECT_DIR$/.idea/assignment1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/CXX.includecache" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.internal" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/abGen.cpp" afterPath="$PROJECT_DIR$/src/abGen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bfsSolver.cpp" afterPath="$PROJECT_DIR$/src/bfsSolver.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dfsSolver.cpp" afterPath="$PROJECT_DIR$/src/dfsSolver.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolvereuclidian.cpp" afterPath="$PROJECT_DIR$/src/dijSolvereuclidian.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolvereuclidian.h" afterPath="$PROJECT_DIR$/src/dijSolvereuclidian.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijsolvermanhattan.cpp" afterPath="$PROJECT_DIR$/src/dijsolvermanhattan.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijsolvermanhattan.h" afterPath="$PROJECT_DIR$/src/dijsolvermanhattan.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ellerGen.cpp" afterPath="$PROJECT_DIR$/src/ellerGen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ellerGen.h" afterPath="$PROJECT_DIR$/src/ellerGen.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.h" afterPath="$PROJECT_DIR$/src/mazer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.h" afterPath="$PROJECT_DIR$/src/maze.h" />
     </list>
     <ignored path="assignment1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ellerGen.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ellerGen.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+            <state relative-caret-position="224">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
               <folding>
                 <element signature="e#193#207#0" expanded="true" />
               </folding>
@@ -75,81 +74,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <file leaf-file-name="dijSolver.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijSolver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="914" column="0" selection-start-line="914" selection-start-column="0" selection-end-line="914" selection-end-column="0" />
+            <state relative-caret-position="589">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uniform_int_dist.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/bits/uniform_int_dist.h">
+      <file leaf-file-name="maze.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="abGen.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/abGen.cpp">
+      <file leaf-file-name="dijSolvereuclidian.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijSolvereuclidian.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="119" column="59" selection-start-line="119" selection-start-column="59" selection-end-line="119" selection-end-column="59" />
+            <state relative-caret-position="355">
+              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bfsSolver.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bfsSolver.h">
+      <file leaf-file-name="dijsolvermanhattan.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijsolvermanhattan.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="338">
+              <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bfsSolver.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bfsSolver.cpp">
+      <file leaf-file-name="dijsolvermanhattan.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijsolvermanhattan.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+            <state relative-caret-position="360">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dfsSolver.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dfsSolver.cpp">
+      <file leaf-file-name="ellerGen.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ellerGen.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+            <state relative-caret-position="391">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_allocator.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
+      <file leaf-file-name="maze.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state relative-caret-position="-612">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alloc_traits.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/bits/alloc_traits.h">
+      <file leaf-file-name="dijSolvereuclidian.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dijSolvereuclidian.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="529" column="0" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -178,20 +177,20 @@
         <option value="$PROJECT_DIR$/src/mazegen.cpp" />
         <option value="$PROJECT_DIR$/src/mazegen.h" />
         <option value="$PROJECT_DIR$/src/heap_set.h" />
-        <option value="$PROJECT_DIR$/src/maze.h" />
         <option value="$PROJECT_DIR$/src/dijSolver.cpp" />
-        <option value="$PROJECT_DIR$/src/dijsolvermanhattan.h" />
-        <option value="$PROJECT_DIR$/src/dijsolvermanhattan.cpp" />
         <option value="$PROJECT_DIR$/src/dijSolver.h" />
-        <option value="$PROJECT_DIR$/src/dijSolvereuclidian.cpp" />
-        <option value="$PROJECT_DIR$/src/dijSolvereuclidian.h" />
         <option value="$PROJECT_DIR$/src/mazer.h" />
         <option value="$PROJECT_DIR$/src/ellerGen.h" />
-        <option value="$PROJECT_DIR$/src/ellerGen.cpp" />
         <option value="$PROJECT_DIR$/src/mazer.cpp" />
         <option value="$PROJECT_DIR$/src/abGen.cpp" />
         <option value="$PROJECT_DIR$/src/dfsSolver.cpp" />
         <option value="$PROJECT_DIR$/src/bfsSolver.cpp" />
+        <option value="$PROJECT_DIR$/src/dijSolvereuclidian.h" />
+        <option value="$PROJECT_DIR$/src/maze.h" />
+        <option value="$PROJECT_DIR$/src/dijsolvermanhattan.h" />
+        <option value="$PROJECT_DIR$/src/dijsolvermanhattan.cpp" />
+        <option value="$PROJECT_DIR$/src/dijSolvereuclidian.cpp" />
+        <option value="$PROJECT_DIR$/src/ellerGen.cpp" />
       </list>
     </option>
   </component>
@@ -634,18 +633,18 @@
       <workItem from="1476311188471" duration="30083000" />
       <workItem from="1476597397797" duration="7467000" />
       <workItem from="1476762397390" duration="7347000" />
-      <workItem from="1476854475369" duration="19152000" />
+      <workItem from="1476854475369" duration="26018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155658000" />
+    <option name="totallyTimeSpent" value="162524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.077083334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30992195" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -794,22 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dijsolvermanhattan.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dijSolvereuclidian.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/abGen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -826,14 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dijSolver.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeCache.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -845,30 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dijSolvereuclidian.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="62" column="89" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dijsolvermanhattan.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -929,29 +880,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ellerGen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/5/bits/vector.tcc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#195#212#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,6 +936,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/c++/5/bits/uniform_int_dist.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dfsSolver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1011,20 +960,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
+    <entry file="file://$PROJECT_DIR$/src/bfsSolver.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding>
-            <element signature="e#193#207#0" expanded="true" />
+            <element signature="e#257#274#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/uniform_int_dist.h">
+    <entry file="file://$PROJECT_DIR$/src/bfsSolver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+        <state relative-caret-position="-144">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/abGen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="121" column="5" selection-start-line="121" selection-start-column="5" selection-end-line="122" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1039,35 +996,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/abGen.cpp">
+    <entry file="file://$PROJECT_DIR$/src/ellerGen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="119" column="59" selection-start-line="119" selection-start-column="59" selection-end-line="119" selection-end-column="59" />
+        <state relative-caret-position="391">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bfsSolver.h">
+    <entry file="file://$PROJECT_DIR$/src/dijsolvermanhattan.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="360">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dfsSolver.cpp">
+    <entry file="file://$PROJECT_DIR$/src/maze.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+        <state relative-caret-position="361">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bfsSolver.cpp">
+    <entry file="file://$PROJECT_DIR$/src/maze.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+        <state relative-caret-position="-612">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dijSolvereuclidian.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dijSolvereuclidian.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dijsolvermanhattan.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dijSolver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

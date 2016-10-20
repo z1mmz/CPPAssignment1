@@ -24,7 +24,7 @@ private:
 	maze m;
 	std::queue<cell> q,n;
 	cell current;
-	std::queue<cell> toVisit;
+	std::priority_queue<cell> toVisit;
 	std::vector <std::vector<int> >visited;
 
 

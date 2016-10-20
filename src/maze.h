@@ -24,6 +24,7 @@ enum direction {
 	east,
 	west
 };
+
 struct cell {
 	int y;
 	int x;
@@ -32,6 +33,11 @@ struct cell {
 	int parent_x;
 	int parent_y;
 	int cost;
+	bool operator<(const cell& rhs) const
+	{
+		return cost > rhs.cost;
+	}
+
 };
 
 typedef std::vector<cell> cell_vec_t;

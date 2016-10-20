@@ -30,7 +30,7 @@ maze dijSolvereu::solve(maze maz) {
 
 	while (!toVisit.empty()) {
 
-		current = toVisit.front();
+		current = toVisit.top();
 		toVisit.pop();
 		visited[current.x][current.y] = 1;
 		for(edge e : current.connected){
@@ -63,8 +63,10 @@ maze dijSolvereu::solve(maze maz) {
 				m.cells[x][y].cost = sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2));
 				m.cells[x][y].parent_x = current.x;
 				m.cells[x][y].parent_y = current.y;
+				visited[x][y] = 1;
 				toVisit.push(m.cells[x][y]);
-			} else if (m.cells[x][y].cost > sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2))){
+			}
+ 			else if (m.cells[x][y].cost > sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2))){
 				m.cells[x][y].cost = sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2));
 				m.cells[x][y].parent_x = current.x;
 				m.cells[x][y].parent_y = current.y;
@@ -76,12 +78,12 @@ maze dijSolvereu::solve(maze maz) {
 	}
 	cell temp = m.cells[m.end.x][m.end.y];
 	int cost = temp.cost;
-	while(temp.x != 0 || temp.y != 0){
-
-		temp = m.cells[temp.parent_x][temp.parent_y];
-		std::cout << temp.x << " " << temp.y << std::endl;
-
-	}
+//	while(temp.x != 0 || temp.y != 0){
+//
+//		temp = m.cells[temp.parent_x][temp.parent_y];
+//		std::cout << temp.x << " " << temp.y << std::endl;
+//
+//	}
 	std::cout << "cost: "<< cost << std::endl;
 	m.solved = true;
 	return m ;
