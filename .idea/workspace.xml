@@ -13,11 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mazer" afterPath="$PROJECT_DIR$/mazer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ellerGen.cpp" afterPath="$PROJECT_DIR$/src/ellerGen.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
     </list>
     <ignored path="assignment1.iws" />
@@ -53,8 +48,8 @@
       <file leaf-file-name="mazer.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            <state relative-caret-position="540">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -620,22 +615,22 @@
       <workItem from="1476597397797" duration="7467000" />
       <workItem from="1476762397390" duration="7347000" />
       <workItem from="1476854475369" duration="26626000" />
-      <workItem from="1476927795935" duration="4347000" />
+      <workItem from="1476927795935" duration="5631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167479000" />
+    <option name="totallyTimeSpent" value="168763000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30992195" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1030,8 +1025,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mazer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        <state relative-caret-position="540">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
       </provider>

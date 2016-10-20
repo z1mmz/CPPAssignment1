@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
 			std::vector<std::string> vars;
 			currentArg = argv[i];
 			i++;
-			while(i < argc && isAFlag(argv[i]) == false ){
+			while(i < argc && !isAFlag(argv[i])){
 				vars.push_back(argv[i]);
 				i++;
 
