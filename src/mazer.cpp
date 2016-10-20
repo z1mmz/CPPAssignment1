@@ -128,13 +128,20 @@ void genMaze(std::string flag,std::vector<std::string> vars){
 }
 void saveMaze(std::string flag,std::vector<std::string> vars){
 	std::string file = vars[0];
+	auto start_t = std::chrono::high_resolution_clock::now();
 	if(flag == "--sv"){
 		std::cout << file << std::endl;
+
 		m.saveToSVG(file);
 	}
 	if(flag == "--sb"){
 		m.saveToBin(file);
 	}
+	auto end_t = std::chrono::high_resolution_clock::now();
+	std::cout << "Saved maze in: "
+			  << std::chrono::duration_cast<std::chrono::milliseconds>(end_t - start_t).count()
+			  << " milliseconds"
+			  << std::endl;
 
 }
 void solveMaze(std::string flag,std::vector<std::string> vars){
