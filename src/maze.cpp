@@ -169,6 +169,8 @@ int maze::loadFromBin(std::string file) {
 		return 1;
 
 	}
+	start = cells[0][0];
+	end = cells[width -1][height -1];
 	in.close();
 
 	return 0;

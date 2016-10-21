@@ -20,7 +20,6 @@ public:
 //	virtual cell calculateDist(cell *, std::queue<cell> *pQueue, maze *pMaze, std::vector<std::vector<int>> *pVector)= 0;
 private:
 	maze m;
-	std::queue<cell> q,n;
 	cell current;
 	std::priority_queue<cell> toVisit;
 	std::vector <std::vector<int> >visited;

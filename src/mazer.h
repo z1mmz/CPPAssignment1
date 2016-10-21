@@ -30,16 +30,7 @@ void genMaze(std::string flag,std::vector<std::string> vars);
 void saveMaze(std::string flag,std::vector<std::string> vars);
 void loadMaze(std::string flag,std::vector<std::string> vars);
 void solveMaze(std::string flag,std::vector<std::string> vars);
-enum flags{
-	ga,
-	ge,
-	pm,
-	pe,
-	pb,
-	pd,
-	lb,
-	sv
-};
+
 #endif
 // #include "mazesaver.h"
 

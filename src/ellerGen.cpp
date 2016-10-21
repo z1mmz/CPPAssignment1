@@ -42,24 +42,41 @@ maze m(w,h);
 	for(int i = 0 ; i < m.cells.size() ; i++) {
 		std::unordered_map<int, std::vector<cell>> next_sets;
 		std::unordered_map<std::string , int > next_cells;
+//		sets.reserve(m.cells.size() * m.cells.size() * 10);
+//		cells.reserve(m.cells.size() * m.cells.size() * 10);
 //		//std::cout << "sets =" << sets.size() << std::endl;
 //		//std::cout << "cells =" << cells.size() << std::endl;
 //		//std::cout << "Sets in new " << std::endl;
-		for(int c = 0 ; c < m.cells[i].size() ; c++){
-			// do a row here
-			// fill in cells that do no have a set
 
-			if(cells[cellToS(m.cells[i][c])] == 0){
-				cells[cellToS(m.cells[i][c])] = next_set++;
-				add(m.cells[i][c] ,cells[cellToS(m.cells[i][c])]);
-//				sets[cells[cellToS(m.cells[i][c])]].push_back(m.cells[i][c]);
-			}
-//			std::cout << cells[cellToS(m.cells[i][c])] << " ";
-		}
-//		std::cout <<" \n";
 		//std::cout << "sets this cycle =" << sets.size() << std::endl;
 		for(int c = 0 ; c < m.cells[i].size() - 1 ; c++){
+			for(int c = 0 ; c < m.cells[i].size() ; c++){
+				// do a row here
+				// fill in cells that do no have a set
 
+				if(cells[cellToS(m.cells[i][c])] == 0){
+					cells[cellToS(m.cells[i][c])] = next_set++;
+					add(m.cells[i][c] ,cells[cellToS(m.cells[i][c])]);
+//				sets[cells[cellToS(m.cells[i][c])]].push_back(m.cells[i][c]);
+				}
+
+			}
+
+
+
+			// do horizontal joins
+			if(distr(generator) == 0 && !same(m.cells[i][c],m.cells[i][c+1])){
+				edge t;
+				t.x1 = m.cells[i][c].x;
+				t.y1 = m.cells[i][c].y;
+				t.x2 = m.cells[i][c+1].x;
+				t.y2 = m.cells[i][c+1].y;
+				m.edges_v.push_back(t);
+				m.cells[i][c].connected.push_back(t);
+				m.cells[i][c+1].connected.push_back(t);
+				// merge the sets here
+				merge(m.cells[i][c] , m.cells[i][c+1]);
+			}
 			if(i == m.width - 1){
 				// do final row
 				if(!same(m.cells[i][c],m.cells[i][c+1])){
@@ -76,77 +93,110 @@ maze m(w,h);
 
 				}
 			}
-			// do horizontal joins
-			if(!same(m.cells[i][c],m.cells[i][c+1]) && distr(generator) == 0){
+//			 adding this creates loops
+			if( i+1 < m.width && !same(m.cells[i][c],m.cells[i+1][c]) && distr(generator) == 0){
 				edge t;
+
 				t.x1 = m.cells[i][c].x;
 				t.y1 = m.cells[i][c].y;
-				t.x2 = m.cells[i][c+1].x;
-				t.y2 = m.cells[i][c+1].y;
+				t.x2 = m.cells[i+1][c].x;
+				t.y2 = m.cells[i+1][c].y;
 				m.edges_v.push_back(t);
 				m.cells[i][c].connected.push_back(t);
-				m.cells[i][c+1].connected.push_back(t);
+				m.cells[i+1][c].connected.push_back(t);
 				// merge the sets here
-				merge(m.cells[i][c] , m.cells[i][c+1]);
+				merge(m.cells[i][c] , m.cells[i+1][c]);
+				cells[cellToS(m.cells[t.x2][t.y2])] =  cells[cellToS(m.cells[t.x1][t.y1])];
+				next_cells[cellToS(m.cells[t.x2][t.y2])] =  cells[cellToS(m.cells[t.x1][t.y1])];
+				////std::cout << "set " << cells[cellToS(m.cells[x + 1][y])] << std::endl;
+				next_sets[next_cells[cellToS(m.cells[t.x2][t.y2])]].push_back(m.cells[t.x2][t.y2]);
 			}
-			// adding this creates loops
-//			if( i+1 < m.height && !same(m.cells[i][c],m.cells[i+1][c]) && distr(generator) == 1){
-//				edge t;
-//
-//				t.x1 = m.cells[i][c].x;
-//				t.y1 = m.cells[i][c].y;
-//				t.x2 = m.cells[i+1][c].x;
-//				t.y2 = m.cells[i+1][c].y;
-//				m.edges_v.push_back(t);
-//				m.cells[i][c].connected.push_back(t);
-//				m.cells[i+1][c].connected.push_back(t);
-//				// merge the sets here
-//				merge(m.cells[i][c] , m.cells[i+1][c]);
-//				next_cells[cellToS(m.cells[t.x2][t.y2])] =  cells[cellToS(m.cells[t.x1][t.y1])];
-//				////std::cout << "set " << cells[cellToS(m.cells[x + 1][y])] << std::endl;
-//				next_sets[next_cells[cellToS(m.cells[t.x2][t.y2])]].push_back(m.cells[t.x2][t.y2]);
-//			}
 
 		}
-
+//		for(int c = 0 ; c < m.cells[i].size() ; c++){
+//			// do a row here
+//			// fill in cells that do no have a set
+//
+//			std::cout << cells[cellToS(m.cells[i][c])] << " ";
+//		}
+//		std::cout <<" \n";
 
 		// do joins to next set
-
-		for(int s = 1 ; s <= sets.size() ;s++){
-
-			if(sets[s].size() > 0 ) {
-				int key = (rand() % (int) (sets[s].size()));
-
-				int x = sets[s][key].x;
-				int y = sets[s][key].y;
+//		std::cout << "Start Loop "<< std::endl;
+		for(auto set : sets){
 
 
-				if(x < m.width - 1 && !same(m.cells[x][y],m.cells[x+1][y])) {
-					edge t;
-					//
-					t.x1 = x;
-					t.y1 = y;
-					t.x2 = x + 1;
-					t.y2 = y;
-					m.edges_v.push_back(t);
-					m.cells[x][y].connected.push_back(t);
-					m.cells[x + 1][y].connected.push_back(t);
-					merge(m.cells[x][y], m.cells[x+1][y]);
-					next_cells[cellToS(m.cells[x + 1][y])] =  cells[cellToS(m.cells[x][y])];
-					////std::cout << "set " << cells[cellToS(m.cells[x + 1][y])] << std::endl;
-					next_sets[next_cells[cellToS(m.cells[x + 1][y])]].push_back(m.cells[x + 1][y]);
-					// merge the sets here
+
+			if(set.second.size() != 0) {
+				for(int t = 0 ; t < rand() % set.second.size() + 1; t++) {
+					int key = (int) (rand() % set.second.size());
+////				sets.find(s);
+////				set->second
+					int x = set.second.at(key).x;
+					int y = set.second.at(key).y;
+
+
+					if (x < m.width - 1 && !same(m.cells[x][y], m.cells[x + 1][y])) {
+						edge t;
+						//
+						t.x1 = x;
+						t.y1 = y;
+						t.x2 = x + 1;
+						t.y2 = y;
+						m.edges_v.push_back(t);
+						m.cells[x][y].connected.push_back(t);
+						m.cells[x + 1][y].connected.push_back(t);
+//					merge(m.cells[x][y], m.cells[x + 1][y]);
+						cells[cellToS(m.cells[x + 1][y])] = cells[cellToS(m.cells[x][y])];
+						next_cells[cellToS(m.cells[x + 1][y])] = cells[cellToS(m.cells[x][y])];
+						////std::cout << "set " << cells[cellToS(m.cells[x + 1][y])] << std::endl;
+						next_sets[next_cells[cellToS(m.cells[x + 1][y])]].push_back(m.cells[x + 1][y]);
+						// merge the sets here
+					}
 				}
 			}
 		}
+//		for(int s = 1 ; s <= sets.size() ;s++){
+//			std::cout << "SET SIZE = " <<sets.size()<< std::endl;
+//			std::unordered_map<int,std::vector<cell>>::iterator set = sets.find(s);
+////			int set_s = (int) sets[s].size();
+//			if(set != sets.end() ) {
+//				int key = rand() % set->second.size() - 1;
+////				sets.find(s);
+////				set->second
+//				int x = set->second.at(key).x;
+//				int y = set->second.at(key).y;
+//
+//
+//				if(x < m.width - 1 && !same(m.cells[x][y],m.cells[x+1][y])) {
+//					edge t;
+//					//
+//					t.x1 = x;
+//					t.y1 = y;
+//					t.x2 = x + 1;
+//					t.y2 = y;
+//					m.edges_v.push_back(t);
+//					m.cells[x][y].connected.push_back(t);
+//					m.cells[x + 1][y].connected.push_back(t);
+//					merge(m.cells[x][y], m.cells[x+1][y]);
+//					next_cells[cellToS(m.cells[x + 1][y])] =  cells[cellToS(m.cells[x][y])];
+//					////std::cout << "set " << cells[cellToS(m.cells[x + 1][y])] << std::endl;
+//					next_sets[next_cells[cellToS(m.cells[x + 1][y])]].push_back(m.cells[x + 1][y]);
+//					// merge the sets here
+//				}
+//			}
+//		}
+//		std::cout << "End Loop "<< std::endl;
 
 
 		cells = next_cells;
 		sets = next_sets;
 
+//		std::cout << "SET SIZE AFTER RESET= " <<sets.size()<< std::endl;
+
 	}
-	m.start = m.cells[0][0];
-	m.end = m.cells[w-1][h-1];
+	m.start = m.cells[0][h-1];
+	m.end = m.cells[w-1][0];
 	return m;
 	
 }
@@ -178,6 +228,5 @@ void ellerGen::merge(cell s, cell t) {
 		cells[cellToS(sets[target][i])] = sink;
 	}
 	sets[sink].insert(sets[sink].end(),sets[target].begin(),sets[target].end());
-
 	sets.erase(target);
 }

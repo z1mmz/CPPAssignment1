@@ -38,14 +38,14 @@ maze dfsSolver::solve(maze m) {
 //
 		if (current.y == m.end.y && current.x == m.end.x){
 			//std::cout << "SOLVED" << std::endl;
-			cell temp = m.cells[m.end.x][m.end.y];
-
-			while(temp.x != 0 || temp.y != 0){
-
-				temp = m.cells[temp.parent_x][temp.parent_y];
-				//std::cout << temp.x << " " << temp.y << std::endl;
-
-			}
+//			cell temp = m.cells[m.end.x][m.end.y];
+//
+//			while(temp.x != 0 || temp.y != 0){
+//
+//				temp = m.cells[temp.parent_x][temp.parent_y];
+//				//std::cout << temp.x << " " << temp.y << std::endl;
+//
+//			}
 
 			m.solved = true;
 			return m ;

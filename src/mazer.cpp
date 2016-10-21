@@ -93,9 +93,10 @@ void genMaze(std::string flag,std::vector<std::string> vars){
 
 	generator * g;
 
-	int seed,w,h;
+	int w,h;
+	long seed;
 	if (vars.size() == 3) {
-				seed = stoi(vars.at(0));
+				seed = stol(vars.at(0));
 				w = stoi(vars[1]);
 				h = stoi(vars[2]);
 
