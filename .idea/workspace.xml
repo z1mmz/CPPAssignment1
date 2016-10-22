@@ -13,29 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/callgrind.out.27231" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/callgrind.out.27601" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Heap.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/maze.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/maze.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mazer" afterPath="$PROJECT_DIR$/mazer" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.svg" afterPath="$PROJECT_DIR$/a.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dfsSolver.cpp" afterPath="$PROJECT_DIR$/src/dfsSolver.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolvereuclidian.h" afterPath="$PROJECT_DIR$/src/dijSolvereuclidian.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijsolvermanhattan.h" afterPath="$PROJECT_DIR$/src/dijsolvermanhattan.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ellerGen.cpp" afterPath="$PROJECT_DIR$/src/ellerGen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ellerGen.h" afterPath="$PROJECT_DIR$/src/ellerGen.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze.cpp" afterPath="$PROJECT_DIR$/src/maze.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.h" afterPath="$PROJECT_DIR$/src/mazer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.svg" afterPath="$PROJECT_DIR$/test.svg" />
     </list>
     <ignored path="assignment1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +41,8 @@
       <file leaf-file-name="ellerGen.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="117" column="16" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+            <state relative-caret-position="235">
+              <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
               <folding>
                 <element signature="e#193#207#0" expanded="true" />
               </folding>
@@ -101,7 +84,7 @@
         <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
-              <caret line="823" column="0" selection-start-line="823" selection-start-column="0" selection-end-line="823" selection-end-column="0" />
+              <caret line="802" column="0" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,9 +189,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="y" value="28" />
-    <option name="width" value="960" />
+    <option name="width" value="1920" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -594,7 +576,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--ge 2 100 100 --sv a.svg" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cppassignment" TARGET_NAME="mazer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cppassignment" RUN_TARGET_NAME="mazer">
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--ge 2 100 2000 --sv a.svg" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cppassignment" TARGET_NAME="mazer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cppassignment" RUN_TARGET_NAME="mazer">
       <envs />
       <method />
     </configuration>
@@ -642,28 +624,28 @@
       <workItem from="1476597397797" duration="7467000" />
       <workItem from="1476762397390" duration="7347000" />
       <workItem from="1476854475369" duration="26626000" />
-      <workItem from="1476927795935" duration="24977000" />
+      <workItem from="1476927795935" duration="26085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188109000" />
+    <option name="totallyTimeSpent" value="189217000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="28" width="960" height="1018" extended-state="4" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31354168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30992195" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41917503" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41917503" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -999,22 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="823" column="0" selection-start-line="823" selection-start-column="0" selection-end-line="823" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/5/bits/stl_pair.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1071,10 +1037,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="802" column="0" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ellerGen.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="117" column="16" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+        <state relative-caret-position="235">
+          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
           <folding>
             <element signature="e#193#207#0" expanded="true" />
           </folding>
