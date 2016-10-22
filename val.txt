@@ -1,8 +1,0 @@
-ELLERS
-Generated maze in: 188 milliseconds
-maze h: 100 maze w: 100
-total edges: 10337
-Seed: 2
-Solved maze in: 8 milliseconds
-test.svg
-Saved maze in: 5 milliseconds

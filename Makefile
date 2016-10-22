@@ -231,33 +231,6 @@ src/dfsSolver.cpp.s:
 	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/dfsSolver.cpp.s
 .PHONY : src/dfsSolver.cpp.s
 
-src/dijSolver.o: src/dijSolver.cpp.o
-
-.PHONY : src/dijSolver.o
-
-# target to build an object file
-src/dijSolver.cpp.o:
-	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/dijSolver.cpp.o
-.PHONY : src/dijSolver.cpp.o
-
-src/dijSolver.i: src/dijSolver.cpp.i
-
-.PHONY : src/dijSolver.i
-
-# target to preprocess a source file
-src/dijSolver.cpp.i:
-	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/dijSolver.cpp.i
-.PHONY : src/dijSolver.cpp.i
-
-src/dijSolver.s: src/dijSolver.cpp.s
-
-.PHONY : src/dijSolver.s
-
-# target to generate assembly for a file
-src/dijSolver.cpp.s:
-	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/dijSolver.cpp.s
-.PHONY : src/dijSolver.cpp.s
-
 src/dijSolvereuclidian.o: src/dijSolvereuclidian.cpp.o
 
 .PHONY : src/dijSolvereuclidian.o
@@ -468,9 +441,6 @@ help:
 	@echo "... src/dfsSolver.o"
 	@echo "... src/dfsSolver.i"
 	@echo "... src/dfsSolver.s"
-	@echo "... src/dijSolver.o"
-	@echo "... src/dijSolver.i"
-	@echo "... src/dijSolver.s"
 	@echo "... src/dijSolvereuclidian.o"
 	@echo "... src/dijSolvereuclidian.i"
 	@echo "... src/dijSolvereuclidian.s"

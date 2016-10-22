@@ -16,7 +16,7 @@ maze dijSolvereu::solve(maze maz) {
 
 	m = maz;
 	current = m.start;
-
+	// 2d array for checking visted cells
 	for (int i = 0; i <= m.width; i++) {
 		std::vector<int> col;
 		for (int x = 0; x <= m.height; x++) {
@@ -32,7 +32,11 @@ maze dijSolvereu::solve(maze maz) {
 
 		current = toVisit.top();
 		toVisit.pop();
+		// mark current as visited
 		visited[current.x][current.y] = 1;
+
+		// get all neighbors and add them to visit if we have better cost for them or
+		// they are not visited
 		for(edge e : current.connected){
 			int x,y;
 			//We check which co-ordinates to use as we are reusing the edges
@@ -43,24 +47,12 @@ maze dijSolvereu::solve(maze maz) {
 				x = e.x1;
 				y = e.y1;
 			}
-			//manhattan
-//			if(!visited[x][y]){
-//				m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
-//				m.cells[x][y].parent_x = current.x;
-//				m.cells[x][y].parent_y = current.y;
-//				toVisit.push(m.cells[x][y]);
-//			} else if (m.cells[x][y].cost < (abs(x - m.start.x) + abs( y - m.start.y))){
-//				m.cells[x][y].cost = abs(x - m.start.x) + abs( y - m.start.y);
-//				m.cells[x][y].parent_x = current.x;
-//				m.cells[x][y].parent_y = current.y;
-//				toVisit.push(m.cells[x][y]);
-//			}
 
-			// euclidian
-//			calculateDist(&current, &toVisit, &m, &visited);
+
+			// euclidian distance calc
 
 			if(!visited[x][y]){
-				m.cells[x][y].cost = sqrt(pow((x - m.start.x),2)+pow((y - m.start.y),2));
+				m.cells[x][y].cost = sqrt (pow((x - m.start.x),2)+pow((y - m.start.y),2));
 				m.cells[x][y].parent_x = current.x;
 				m.cells[x][y].parent_y = current.y;
 				visited[x][y] = 1;
@@ -78,12 +70,6 @@ maze dijSolvereu::solve(maze maz) {
 	}
 	cell temp = m.cells[m.end.x][m.end.y];
 	int cost = temp.cost;
-//	while(temp.x != 0 || temp.y != 0){
-//
-//		temp = m.cells[temp.parent_x][temp.parent_y];
-//		std::cout << temp.x << " " << temp.y << std::endl;
-//
-//	}
 	std::cout << "cost: "<< cost << std::endl;
 	m.solved = true;
 	return m ;

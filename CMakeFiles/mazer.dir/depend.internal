@@ -25,13 +25,6 @@ CMakeFiles/mazer.dir/src/dfsSolver.cpp.o
  /home/wolf/Documents/cPlusPlus/assignment1/src/dfsSolver.cpp
  /home/wolf/Documents/cPlusPlus/assignment1/src/dfsSolver.h
  /home/wolf/Documents/cPlusPlus/assignment1/src/maze.h
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o
- /home/wolf/Documents/cPlusPlus/assignment1/src/computePath.h
- /home/wolf/Documents/cPlusPlus/assignment1/src/dijSolver.cpp
- /home/wolf/Documents/cPlusPlus/assignment1/src/dijSolver.h
- /home/wolf/Documents/cPlusPlus/assignment1/src/dijSolvereuclidian.h
- /home/wolf/Documents/cPlusPlus/assignment1/src/dijsolvermanhattan.h
- /home/wolf/Documents/cPlusPlus/assignment1/src/maze.h
 CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o
  /home/wolf/Documents/cPlusPlus/assignment1/src/computePath.h
  /home/wolf/Documents/cPlusPlus/assignment1/src/dijSolver.h

@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <stdio.h>
+
 template <typename T> class heap_set: public std::vector<T> {
 public:
     heap_set(void) { size = 0; this->reserve(100); };

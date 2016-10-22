@@ -18,13 +18,12 @@ using namespace std;
 maze bfsSolver::solve(maze m) {
 	cell current = m.start;
 
-//	std::set<cell> visited;
-
-	std::queue <cell> toVisit;
-	vector <vector<int>> visited;
-	for(int i = 0 ; i <= m.width; i++){
+	// create a 2d vector for checking if a cell has been visited
+	std::queue<cell> toVisit;
+	vector<vector<int>> visited;
+	for (int i = 0; i <= m.width; i++) {
 		std::vector<int> col;
-		for(int x = 0 ; x <= m.height; x++){
+		for (int x = 0; x <= m.height; x++) {
 			col.push_back(0);
 		}
 		visited.push_back(col);
@@ -32,69 +31,52 @@ maze bfsSolver::solve(maze m) {
 	std::cout << "BFS" << std::endl;
 	toVisit.push(current);
 
-//	test.y;
-	int z = 0;
+
+	int z = 0;// counter for how many times we have looped
+
+
 	while (!toVisit.empty()) {
 
-//	current->connected[1];
-		while (visited[current.x][current.y] == 1){
+		// if the node is already visited get a new one
+		while (visited[current.x][current.y] == 1) {
 			current = toVisit.front();
 
 			toVisit.pop();
 
 		}
 
-//
-		if (current.y == m.end.y && current.x == m.end.x){
-//			std::cout << "SOLVED" << std::endl;
+
+		if (current.y == m.end.y && current.x == m.end.x) {
 			cell temp = m.cells[m.end.x][m.end.y];
-
-
-//			while(temp.x != 0 || temp.y != 0){
-//
-//				temp = m.cells[temp.parent_x][temp.parent_y];
-//				std::cout << temp.x << " " << temp.y << std::endl;
-//
-//			}
 			m.solved = true;
-			return m ;
+			return m;
 		}
-	visited[current.x][current.y] = 1;
-		z++;
-//		std::cout << "to visit  "<< toVisit.size() << std::endl;
-//	std::cout << "visited ?  "<< z << std::endl;
-		for (int i = 0; i < current.connected.size() ; i++) {
-			edge e = current.connected[i];
-			if (e.x1 == current.x && e.y1 == current.y){
-				if(visited[e.x2][e.y2] == 0) {
 
+		// mark the current node as visited
+		visited[current.x][current.y] = 1;
+		z++;
+
+		// add all the neighbors to visit and set their parents
+		for (int i = 0; i < (int)current.connected.size(); i++) {
+			edge e = current.connected[i];
+			if (e.x1 == current.x && e.y1 == current.y) {
+				if (visited[e.x2][e.y2] == 0) {
 					m.cells[e.x2][e.y2].parent_y = e.y1;
 					m.cells[e.x2][e.y2].parent_x = e.x1;
-//					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
-//					std::cout << "Parents: "<< m.cells[e.x2][e.y2].parent_x << " " << m.cells[e.x2][e.y2].parent_y << std::endl;
 					toVisit.push(m.cells[e.x2][e.y2]);
 				}
-			} else{
-				if(visited[e.x1][e.y1] == 0) {
+			} else {
+				if (visited[e.x1][e.y1] == 0) {
 					m.cells[e.x1][e.y1].parent_y = e.y2;
 					m.cells[e.x1][e.y1].parent_x = e.x2;
-//					std::cout << "Current: "<< current.x << " " << current.y << std::endl ;
-//					std::cout << "Parents: "<< m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
-//					std::cout << m.cells[e.x1][e.y1].parent_x << " " << m.cells[e.x1][e.y1].parent_y << std::endl;
 					toVisit.push(m.cells[e.x1][e.y1]);
 				}
 			}
 		}
+		// get the next node
 		current = toVisit.front();
 
-//		toVisit.pop();
-//		std::cout << "POP" << std::endl;
 	}
-
-
-
-	std::cout << "visited: " << z;
-
 
 	return m;
 

@@ -25,13 +25,6 @@ CMakeFiles/mazer.dir/src/dfsSolver.cpp.o: src/dfsSolver.cpp
 CMakeFiles/mazer.dir/src/dfsSolver.cpp.o: src/dfsSolver.h
 CMakeFiles/mazer.dir/src/dfsSolver.cpp.o: src/maze.h
 
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o: src/computePath.h
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o: src/dijSolver.cpp
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o: src/dijSolver.h
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o: src/dijSolvereuclidian.h
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o: src/dijsolvermanhattan.h
-CMakeFiles/mazer.dir/src/dijSolver.cpp.o: src/maze.h
-
 CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o: src/computePath.h
 CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o: src/dijSolver.h
 CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o: src/dijSolvereuclidian.cpp

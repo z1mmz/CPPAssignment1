@@ -39,7 +39,7 @@ maze m(w,h);
 	std::uniform_int_distribution<int> distr(0, 1);
 //	std::vector<std::set<std::string>> set;
 	int next_set = 1;
-	for(int i = 0 ; i < m.cells.size() ; i++) {
+	for(unsigned i = 0 ; i < m.cells.size() ; i++) {
 		std::unordered_map<int, std::vector<cell>> next_sets;
 		std::unordered_map<std::string , int > next_cells;
 //		sets.reserve(m.cells.size() * m.cells.size() * 10);
@@ -47,7 +47,7 @@ maze m(w,h);
 //		//std::cout << "sets =" << sets.size() << std::endl;
 //		//std::cout << "cells =" << cells.size() << std::endl;
 //		//std::cout << "Sets in new " << std::endl;
-		for(int c = 0 ; c < m.cells[i].size() ; c++){
+		for(unsigned c = 0 ; c < m.cells[i].size() ; c++){
 			// do a row here
 			// fill in cells that do no have a set
 
@@ -60,7 +60,7 @@ maze m(w,h);
 		}
 //		std::cout <<" \n";
 		//std::cout << "sets this cycle =" << sets.size() << std::endl;
-		for(int c = 0 ; c < m.cells[i].size() - 1 ; c++){
+		for(unsigned c = 0 ; c < m.cells[i].size() - 1 ; c++){
 
 
 			// do horizontal joins
@@ -76,7 +76,7 @@ maze m(w,h);
 				// merge the sets here
 				merge(m.cells[i][c] , m.cells[i][c+1]);
 			}
-			if(i == m.width - 1){
+			if(i == (unsigned) m.width - 1){
 				// do final row
 				if(!same(m.cells[i][c],m.cells[i][c+1])){
 					edge t;
@@ -93,7 +93,7 @@ maze m(w,h);
 				}
 			}
 			// adding this creates loops
-			if( i+1 < m.width && !same(m.cells[i][c],m.cells[i+1][c]) && distr(generator) == 1){
+			if( i+1 < (unsigned) m.width && !same(m.cells[i][c],m.cells[i+1][c]) && distr(generator) == 1){
 				edge t;
 
 				t.x1 = m.cells[i][c].x;
@@ -211,7 +211,7 @@ void ellerGen::merge(cell s, cell t) {
 	int sink = cells[cellToS(s)];
 	int target = cells[cellToS(t)];
 //	sets[sink].reserve(sets[target].size() + sets[sink].size());
-	for(int i = 0 ; i < sets[target].size() ; i++ ){
+	for(unsigned i = 0 ; i < sets[target].size() ; i++ ){
 		cells[cellToS(sets[target][i])] = sink;
 	}
 	sets[sink].insert(sets[sink].end(),sets[target].begin(),sets[target].end());

@@ -43,16 +43,25 @@ int main(int argc, char *argv[]) {
 	funcs.emplace("--lb",&loadMaze);
 
 //	maze m = maze();
-	computePath * e;
-	e = new dfsSolver();
-	std::string help = "./mazer --lb filename.maze --sv filename.svg"
-			"# load binary file and save svg file \n"
-			"./mazer --g seed --sb filename.maze # generate with seed value,"
-			" save binary file \n./mazer --g seed --sv filename.svg # generate"
-			" with seed value, save svg file \n./mazer --g seed --sb filename.maze"
-			" --sv filename.svg # gen with seed, save binary, save svg";
-	if (argc < 5) {
-//		std::cerr << "ERROR: incorrect usage p1ease use mazer --help for commands" << std::endl;
+
+
+	std::string help = "First command must be a loader or generator\n"
+			"eg. ./mazer --ge 100 100 --pd --sv test.svg # "
+			"generate a maze using ellers that is 100x100 \nsolve it using dfs "
+			"and save as svg\n"
+			"----------------------------------------------------------------\n"
+			"Commands\n"
+			"----------------------------------------------------------------\n"
+			"--lb <filename> # load from a binary file\n"
+			"--ga seed(optional) width height # generate maze using "
+			"Aldous-Broder\n"
+			"--ge seed(optional) width height # generate maze using ellers\n"
+			"--pe # solve maze using Dijkstra's with euclidean distance\n"
+			"--pm # Solve Maze using Dijkstra's with manhattan distance\n"
+			"--pb # Solve maze using breadth first search\n"
+			"--pd # Solve mazae using Depth first Search\n"
+			"--sv # Save to svg";
+	if (argc < 2) {
 		std::cerr << help << std::endl;
 	} else {
 
@@ -105,7 +114,8 @@ void genMaze(std::string flag,std::vector<std::string> vars){
 				w = stoi(vars[0]);
 				h = stoi(vars[1]);
 			} else {
-				std::cerr << "Please supply at least width and height" << std::endl;
+				std::cerr << "Please supply at least width and height"
+						  << std::endl;
 				return;
 			}
 	if(flag == "--ga") {
@@ -147,19 +157,6 @@ void saveMaze(std::string flag,std::vector<std::string> vars){
 }
 void solveMaze(std::string flag,std::vector<std::string> vars){
 	computePath  * e;
-
-//	if(flag == "--pb"){
-//		e = new bfsSolver();
-//	}
-//	if(flag == "--pd"){
-//		e = new dfsSolver();
-//	}
-//	if(flag == "--pm"){
-//		e = new dijSolvermanhattan();
-//	}
-//	if(flag == "--pe"){
-//		e = new dijSolvereu();
-//	}
 
 	e = solverFactory::makeSolver(flag);
 	auto start_t = std::chrono::high_resolution_clock::now();
