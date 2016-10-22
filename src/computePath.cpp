@@ -7,6 +7,10 @@
  * Program Code: BP094
  * */
 #include "computePath.h"
+#include "bfsSolver.h"
+#include "dfsSolver.h"
+#include "dijsolvermanhattan.h"
+
 computePath::computePath() {
 
 }
@@ -14,6 +18,8 @@ maze computePath::solve(maze m) {
 	std::cout << "Base" << std::endl;
 	return m;
 }
+
+
 
 
 

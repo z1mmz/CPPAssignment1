@@ -420,6 +420,33 @@ src/mazer.cpp.s:
 	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/mazer.cpp.s
 .PHONY : src/mazer.cpp.s
 
+src/solverFactory.o: src/solverFactory.cpp.o
+
+.PHONY : src/solverFactory.o
+
+# target to build an object file
+src/solverFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/solverFactory.cpp.o
+.PHONY : src/solverFactory.cpp.o
+
+src/solverFactory.i: src/solverFactory.cpp.i
+
+.PHONY : src/solverFactory.i
+
+# target to preprocess a source file
+src/solverFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/solverFactory.cpp.i
+.PHONY : src/solverFactory.cpp.i
+
+src/solverFactory.s: src/solverFactory.cpp.s
+
+.PHONY : src/solverFactory.s
+
+# target to generate assembly for a file
+src/solverFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/mazer.dir/build.make CMakeFiles/mazer.dir/src/solverFactory.cpp.s
+.PHONY : src/solverFactory.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -462,6 +489,9 @@ help:
 	@echo "... src/mazer.o"
 	@echo "... src/mazer.i"
 	@echo "... src/mazer.s"
+	@echo "... src/solverFactory.o"
+	@echo "... src/solverFactory.i"
+	@echo "... src/solverFactory.s"
 .PHONY : help
 
 

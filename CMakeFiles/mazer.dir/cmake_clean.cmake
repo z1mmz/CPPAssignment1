@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mazer.dir/src/solverFactory.cpp.o"
   "CMakeFiles/mazer.dir/src/maze.cpp.o"
   "CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o"
   "CMakeFiles/mazer.dir/src/dfsSolver.cpp.o"

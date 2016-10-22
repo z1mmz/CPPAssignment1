@@ -27,6 +27,12 @@ computePath.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/computePath.cpp
 computePath.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/computePath.h
+bfsSolver.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/bfsSolver.h
+dfsSolver.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/dfsSolver.h
+dijsolvermanhattan.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/dijsolvermanhattan.h
 
 /home/wolf/Documents/cPlusPlus/assignment1/src/computePath.h
 maze.h
@@ -177,4 +183,20 @@ dijSolver.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/dijSolver.h
 ellerGen.h
 /home/wolf/Documents/cPlusPlus/assignment1/src/ellerGen.h
+solverFactory.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/solverFactory.h
+
+/home/wolf/Documents/cPlusPlus/assignment1/src/solverFactory.cpp
+solverFactory.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/solverFactory.h
+
+/home/wolf/Documents/cPlusPlus/assignment1/src/solverFactory.h
+dijSolver.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/dijSolver.h
+computePath.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/computePath.h
+dfsSolver.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/dfsSolver.h
+bfsSolver.h
+/home/wolf/Documents/cPlusPlus/assignment1/src/bfsSolver.h
 

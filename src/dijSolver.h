@@ -22,6 +22,7 @@
 class dijSolver:public computePath {
 
 public:
+	computePath * getDij(std::string);
 	maze solve(maze) override;
 	virtual cell calculateDist(cell *, std::queue<cell> *pQueue, maze *pMaze, std::vector<std::vector<int>> *pVector)= 0;
 	maze m;

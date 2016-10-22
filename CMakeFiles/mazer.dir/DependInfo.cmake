@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wolf/Documents/cPlusPlus/assignment1/src/maze.cpp" "/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/mazer.dir/src/maze.cpp.o"
   "/home/wolf/Documents/cPlusPlus/assignment1/src/mazegen.cpp" "/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/mazer.dir/src/mazegen.cpp.o"
   "/home/wolf/Documents/cPlusPlus/assignment1/src/mazer.cpp" "/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/mazer.dir/src/mazer.cpp.o"
+  "/home/wolf/Documents/cPlusPlus/assignment1/src/solverFactory.cpp" "/home/wolf/Documents/cPlusPlus/assignment1/CMakeFiles/mazer.dir/src/solverFactory.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

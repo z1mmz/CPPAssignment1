@@ -37,6 +37,12 @@ maze bfsSolver::solve(maze m) {
 	while (!toVisit.empty()) {
 
 //	current->connected[1];
+		while (visited[current.x][current.y] == 1){
+			current = toVisit.front();
+
+			toVisit.pop();
+
+		}
 
 //
 		if (current.y == m.end.y && current.x == m.end.x){
@@ -47,7 +53,7 @@ maze bfsSolver::solve(maze m) {
 //			while(temp.x != 0 || temp.y != 0){
 //
 //				temp = m.cells[temp.parent_x][temp.parent_y];
-////				std::cout << temp.x << " " << temp.y << std::endl;
+//				std::cout << temp.x << " " << temp.y << std::endl;
 //
 //			}
 			m.solved = true;
@@ -81,13 +87,13 @@ maze bfsSolver::solve(maze m) {
 		}
 		current = toVisit.front();
 
-		toVisit.pop();
+//		toVisit.pop();
 //		std::cout << "POP" << std::endl;
 	}
 
 
 
-//	std::cout << "visited: " << z;
+	std::cout << "visited: " << z;
 
 
 	return m;

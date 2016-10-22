@@ -15,6 +15,7 @@
 #include <queue>
 class computePath{
 public:
+	static computePath getSolver(std::string);
 	computePath();
 	 virtual maze solve(maze);
 

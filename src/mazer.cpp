@@ -146,19 +146,22 @@ void saveMaze(std::string flag,std::vector<std::string> vars){
 
 }
 void solveMaze(std::string flag,std::vector<std::string> vars){
-	computePath * e;
-	if(flag == "--pb"){
-		e = new bfsSolver();
-	}
-	if(flag == "--pd"){
-		e = new dfsSolver();
-	}
-	if(flag == "--pm"){
-		e = new dijSolvermanhattan();
-	}
-	if(flag == "--pe"){
-		e = new dijSolvereu();
-	}
+	computePath  * e;
+
+//	if(flag == "--pb"){
+//		e = new bfsSolver();
+//	}
+//	if(flag == "--pd"){
+//		e = new dfsSolver();
+//	}
+//	if(flag == "--pm"){
+//		e = new dijSolvermanhattan();
+//	}
+//	if(flag == "--pe"){
+//		e = new dijSolvereu();
+//	}
+
+	e = solverFactory::makeSolver(flag);
 	auto start_t = std::chrono::high_resolution_clock::now();
 	m = e->solve(m);
 	auto end_t = std::chrono::high_resolution_clock::now();

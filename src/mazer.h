@@ -23,7 +23,7 @@
 #include "heap_set.h"
 #include "dijSolver.h"
 #include "ellerGen.h"
-
+#include "solverFactory.h"
 
 // #include "maze.h"
 void genMaze(std::string flag,std::vector<std::string> vars);

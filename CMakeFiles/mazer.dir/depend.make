@@ -11,8 +11,13 @@ CMakeFiles/mazer.dir/src/bfsSolver.cpp.o: src/bfsSolver.h
 CMakeFiles/mazer.dir/src/bfsSolver.cpp.o: src/computePath.h
 CMakeFiles/mazer.dir/src/bfsSolver.cpp.o: src/maze.h
 
+CMakeFiles/mazer.dir/src/computePath.cpp.o: src/bfsSolver.h
 CMakeFiles/mazer.dir/src/computePath.cpp.o: src/computePath.cpp
 CMakeFiles/mazer.dir/src/computePath.cpp.o: src/computePath.h
+CMakeFiles/mazer.dir/src/computePath.cpp.o: src/dfsSolver.h
+CMakeFiles/mazer.dir/src/computePath.cpp.o: src/dijSolver.h
+CMakeFiles/mazer.dir/src/computePath.cpp.o: src/dijSolvereuclidian.h
+CMakeFiles/mazer.dir/src/computePath.cpp.o: src/dijsolvermanhattan.h
 CMakeFiles/mazer.dir/src/computePath.cpp.o: src/maze.h
 
 CMakeFiles/mazer.dir/src/dfsSolver.cpp.o: src/computePath.h
@@ -66,4 +71,15 @@ CMakeFiles/mazer.dir/src/mazer.cpp.o: src/maze.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/mazegen.h
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/mazer.cpp
 CMakeFiles/mazer.dir/src/mazer.cpp.o: src/mazer.h
+CMakeFiles/mazer.dir/src/mazer.cpp.o: src/solverFactory.h
+
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/bfsSolver.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/computePath.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/dfsSolver.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/dijSolver.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/dijSolvereuclidian.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/dijsolvermanhattan.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/maze.h
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/solverFactory.cpp
+CMakeFiles/mazer.dir/src/solverFactory.cpp.o: src/solverFactory.h
 
