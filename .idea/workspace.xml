@@ -12,46 +12,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CMakeCache.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolver.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/makefileold" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mazer" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mazer_cptmp.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/outFile.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dijSolver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.maze" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/val.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/bfsSolver.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dfsSolver.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijSolvereuclidian.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/dijsolvermanhattan.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/ellerGen.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/src/mazer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/CXX.includecache" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/build.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.internal" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/link.txt" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/mazer.dir/progress.make" afterPath="$PROJECT_DIR$/CMakeFiles/mazer.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bfsSolver.cpp" afterPath="$PROJECT_DIR$/src/bfsSolver.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dfsSolver.cpp" afterPath="$PROJECT_DIR$/src/dfsSolver.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolver.h" afterPath="$PROJECT_DIR$/src/dijSolver.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijSolvereuclidian.cpp" afterPath="$PROJECT_DIR$/src/dijSolvereuclidian.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dijsolvermanhattan.cpp" afterPath="$PROJECT_DIR$/src/dijsolvermanhattan.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ellerGen.cpp" afterPath="$PROJECT_DIR$/src/ellerGen.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/heap_set.h" afterPath="$PROJECT_DIR$/src/heap_set.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mazer.cpp" afterPath="$PROJECT_DIR$/src/mazer.cpp" />
-    </list>
+    <list default="true" id="1ffaa2c4-066e-4f74-b28c-fae60547fb3d" name="Default" comment="" />
     <ignored path="assignment1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -627,12 +588,12 @@
       <workItem from="1476597397797" duration="7467000" />
       <workItem from="1476762397390" duration="7347000" />
       <workItem from="1476854475369" duration="26626000" />
-      <workItem from="1476927795935" duration="35993000" />
+      <workItem from="1476927795935" duration="36576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199125000" />
+    <option name="totallyTimeSpent" value="199708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -641,7 +602,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />

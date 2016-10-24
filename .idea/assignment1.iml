@@ -6,23 +6,24 @@
       <sourceFolder url="file://$MODULE_DIR$/src/mazer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/computePath.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/computePath.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/ellerGen.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/dijsolvermanhattan.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/heap_set.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/abGen.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/maze.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/dijsolvermanhattan.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/dijsolvermanhattan.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/bfsSolver.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/dijSolver.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/dfsSolver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/dijsolvermanhattan.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/dfsSolver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/dfsSolver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/ellerGen.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/bfsSolver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazegen.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/maze.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/dijSolver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/solverFactory.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ellerGen.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/mazegen.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/solverFactory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/abGen.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/dijSolvereuclidian.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
